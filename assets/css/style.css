@@ -481,7 +481,8 @@ body.v-light:not(.no-light) {
 }
 
 .main-root {
-    position: relative
+    position: relative;
+    overflow: hidden;
 }
 
 .btn-play-inner-small svg {
