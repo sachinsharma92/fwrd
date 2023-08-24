@@ -630,7 +630,7 @@ header .header-page .subtitle-page {
 /* testimonial section */
 
 .v-light:not(.no-light) .our-work .work-item .item-info h3 {
-  color: #000;
+  color: white;
 }
 
 .our-work .work-item .testimonial-title.item-info {
@@ -1196,15 +1196,10 @@ header .header-page .subtitle-page {
 
 #dsn-hero-title .metas {
   transform: rotateZ(-90deg);
-  /* text-align: right; */
   position: relative;
   width: 100%;
   z-index: 1;
   left: -36vw;
-}
-
-#dsn-hero-title .title.hero {
-  /* transform: rotateZ(-90deg) translateX(-47%) translateY(-125%); */
 }
 
 .header-project .description {
@@ -1248,46 +1243,36 @@ header .header-page .subtitle-page {
 }
 
 .work_2.our-work .work-item {
-  height: 100vh !important;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  gap: 50px;
+}
+
+.work_2.scroll-slider {
+  background: black;
 }
 
 .work_2.our-work .img-next-box {
-  width: 70vw;
-  height: 500px;
-  margin: auto;
-  transform: translate(-50%);
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  left: 50%;
+  min-width: 660px;
+  height: 538px;
   box-shadow: 0 5px 32px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
   overflow: hidden;
 }
 
 .work_2.our-work .item-info {
-  width: 72%;
-  margin: auto;
-  transform: translate(-50%) !important;
-  -webkit-transform: translate(-50%) !important;
-  -ms-transform: translate(-50%) !important;
-  left: 50%;
-  top: 530px;
-  bottom: 0;
-  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0 50px;
 }
 
 .work_2.our-work .item-info p {
   font-size: 19px;
 }
 
-@media (min-width: 1600px) {
-  .work_2.our-work .item-info {
-    width: 70%;
-  }
-
-  .work_2.our-work .item-info p {
-    max-width: 80%;
-  }
+.work_2.our-work .work-item {
+  min-width: 100vw;
 }
 
 .work_2.our-work .work-item .item-border {
