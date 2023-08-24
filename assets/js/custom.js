@@ -2246,12 +2246,10 @@ function contactValidator() {
               0.8,
               {
                 y: "-100%",
-                // transformOrigin: "top left",
               },
               {
-                y: "220%",
+                y: "200%",
                 rotation: 90 * 1,
-                // transformOrigin: "top left",
               }
             ),
             a.length &&
@@ -2467,7 +2465,7 @@ function contactValidator() {
           let f = dsnGrid.tweenMaxParallax(d, t).addParrlax({
             id: i,
             triggerHook: 0,
-            duration: 4100,
+            duration: "300%",
             tween: u,
             _fixed: !0,
           });
@@ -2661,19 +2659,6 @@ function contactValidator() {
                 x: "0",
                 duration: 50,
               },
-              u.to(
-                s.find(".metas"),
-                1,
-                {
-                  rotationZ: "0",
-                  opacity: "0",
-                  x: "0",
-                  y: "10%",
-                  left: "0px",
-                  ease: Back.easeOut.config(1.7),
-                },
-                0
-              ),
               u.staggerTo(
                 dsnGrid.randomObjectArray(s.find(".dsn-chars-wrapper"), 0.8),
                 1.5,
@@ -2706,7 +2691,7 @@ function contactValidator() {
                   opacity: "1",
                 },
                 {
-                  transform: "scale(.7)",
+                  transform: "scale(.6)",
                   delay: "1",
                   ease: Back.easeOut.config(1.7),
                 },
@@ -2714,17 +2699,6 @@ function contactValidator() {
                 0
               )
             ),
-            a.length &&
-              u.fromTo(
-                s.find(".title"),
-                1,
-                {
-                  y: "90%",
-                },
-                {
-                  y: "20%",
-                }
-              ),
             a.length &&
               u.fromTo(
                 a,
