@@ -317,19 +317,35 @@ header .header-page .subtitle-page {
   z-index: -1;
 }
 
+.upload-file .btn-browse {
+  border: 1px solid #fe5e00;
+  min-width: 203px;
+  height: 56px;
+  color: #fe5e00;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .custom-input-file + label {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-  display: block;
+  display: flex;
   overflow: hidden;
-  padding: 1.25rem 0;
-  border-bottom: 2px solid #fff;
+  gap: 0 30px;
   border-radius: 0;
   color: #8492a6;
   background-color: #fff;
   outline: none;
   margin: 0;
+}
+
+.upload-file .file-name {
+  border-bottom: 2px solid #fff;
+  flex-grow: 2;
 }
 
 .custom-input-file + label i {
@@ -1287,7 +1303,6 @@ header .header-page .subtitle-page {
 
 .our.title .dsn-chars-wrapper {
   opacity: 0;
-  visibility: hidden;
 }
 
 .belief.title .dsn-word-wrapper:last-child {

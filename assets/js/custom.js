@@ -1600,7 +1600,7 @@ function contactValidator() {
                     skewY: "-2",
                     scale: "0.8",
                     x: "10%",
-                    y: "-15%",
+                    y: "-55%",
                   });
             } else if (window.matchMedia("(max-width: 768px)").matches) {
               /* Changes when we reach the min-width  */
@@ -1950,7 +1950,7 @@ function contactValidator() {
                     borderLeft: "outset",
                     borderBottom: "outset",
                     rotationX: "0",
-                    rotationY: "2",
+                    rotationY: "8",
                     skewX: "0",
                     skewY: "0",
                     x: "36%",
@@ -1982,7 +1982,7 @@ function contactValidator() {
                     borderLeft: "outset",
                     borderBottom: "outset",
                     rotationX: "0",
-                    rotationY: "2",
+                    rotationY: "8",
                     skewX: "0",
                     skewY: "0",
                     x: "32%",
@@ -2383,7 +2383,7 @@ function contactValidator() {
                 x: "0",
                 y: "0%",
                 left: "0px",
-                ease: Back.easeOut.config(1.7),
+                ease: Back.easeOut.config(0.5),
               },
               u.to(
                 s.find(".metas"),
@@ -2393,7 +2393,7 @@ function contactValidator() {
                   x: "0",
                   y: "0%",
                   left: "0px",
-                  ease: Back.easeOut.config(1.7),
+                  ease: Back.easeOut.config(0.5),
                 },
                 0
               ),

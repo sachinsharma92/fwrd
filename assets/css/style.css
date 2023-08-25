@@ -10417,6 +10417,9 @@ header .header-master.header-half .social-network-box {
   color: red;
   font-weight: 600;
   margin-bottom: 15px;
+  position: absolute;
+  bottom: -7px;
+  font-size: 12px;
 }
 
 .form-box .form-group li {
