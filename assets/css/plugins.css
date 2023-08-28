@@ -8,19 +8,20 @@
 /* == fontawesome == */
 @import url("plugins/fontawesome-all.min.css");
 
-
 /* == slick == */
 @import url("plugins/slick.css");
 
 /* == Swiper == */
 @import url("plugins/swiper.min.css");
 
-
 /* == justifiedGallery == */
 @import url("plugins/justifiedGallery.min.css");
 
-/* == magnific popup == */	
+/* == magnific popup == */
 @import url("plugins/magnific-popup.css");
 
 /* == magnific popup == */
 @import url("plugins/youtubepopup.css");
+
+/* == WOW Anmation == */
+@import url("plugins/animate.css");

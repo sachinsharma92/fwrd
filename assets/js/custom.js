@@ -1757,7 +1757,7 @@ function contactValidator() {
                   {
                     y: "0%",
                     autoAlpha: 1,
-                    ease: Back.easeOut.config(1.7),
+                    ease: Back.easeOut.config(1),
                   }
                 );
               t3.length > 0 &&
@@ -1772,7 +1772,7 @@ function contactValidator() {
                   {
                     y: "0%",
                     autoAlpha: 1,
-                    ease: Back.easeOut.config(1.7),
+                    ease: Back.easeOut.config(1),
                   }
                 );
               t4.length &&
@@ -1787,7 +1787,7 @@ function contactValidator() {
                   {
                     y: "0%",
                     autoAlpha: 1,
-                    ease: Back.easeOut.config(1.7),
+                    ease: Back.easeOut.config(1),
                   }
                 );
               t5.length > 0 &&
@@ -1802,7 +1802,7 @@ function contactValidator() {
                   {
                     y: "0%",
                     autoAlpha: 1,
-                    ease: Back.easeOut.config(1.7),
+                    ease: Back.easeOut.config(1),
                   }
                 );
               t6.length > 0 &&
@@ -1817,7 +1817,7 @@ function contactValidator() {
                   {
                     y: "0%",
                     autoAlpha: 1,
-                    ease: Back.easeOut.config(1.7),
+                    ease: Back.easeOut.config(1),
                   }
                 );
               t7.length > 0 &&
@@ -1832,7 +1832,7 @@ function contactValidator() {
                   {
                     y: "0%",
                     autoAlpha: 1,
-                    ease: Back.easeOut.config(1.7),
+                    ease: Back.easeOut.config(1),
                   }
                 );
               o.length > 0 &&
@@ -1957,7 +1957,7 @@ function contactValidator() {
           let f = dsnGrid.tweenMaxParallax(d, t).addParrlax({
             id: i,
             triggerHook: 0,
-            duration: 3100,
+            duration: 2100,
             tween: u,
             _fixed: !0,
           });
@@ -2008,6 +2008,46 @@ function contactValidator() {
             /* Set the matchMedia */
             if (window.matchMedia("(max-width: 1368px)").matches) {
               /* Changes when we reach the min-width  */
+              a.length &&
+                u.fromTo(
+                  a,
+                  0.8,
+                  {
+                    y: "15%",
+                    autoAlpha: 0,
+                  },
+                  {
+                    y: "0%",
+                    autoAlpha: 1,
+                  }
+                ),
+                l.length &&
+                  u.fromTo(
+                    l,
+                    0.3,
+                    {
+                      y: "15%",
+                      autoAlpha: 0,
+                    },
+                    {
+                      y: "0%",
+                      autoAlpha: 1,
+                    }
+                  ),
+                r.length &&
+                  u.staggerFromTo(
+                    r,
+                    1,
+                    {
+                      y: "15%",
+                      autoAlpha: 0,
+                    },
+                    {
+                      y: "0%",
+                      autoAlpha: 1,
+                    },
+                    0.2
+                  );
               o.length > 0 &&
                 !dsnGrid.isMobile() &&
                 u.to(o, 2, {
@@ -2040,6 +2080,46 @@ function contactValidator() {
                   });
             } else if (window.matchMedia("(max-width: 1600px)").matches) {
               /* Changes when we reach the min-width  */
+              a.length &&
+                u.fromTo(
+                  a,
+                  0.8,
+                  {
+                    y: "15%",
+                    autoAlpha: 0,
+                  },
+                  {
+                    y: "0%",
+                    autoAlpha: 1,
+                  }
+                ),
+                l.length &&
+                  u.fromTo(
+                    l,
+                    0.3,
+                    {
+                      y: "15%",
+                      autoAlpha: 0,
+                    },
+                    {
+                      y: "0%",
+                      autoAlpha: 1,
+                    }
+                  ),
+                r.length &&
+                  u.staggerFromTo(
+                    r,
+                    1,
+                    {
+                      y: "15%",
+                      autoAlpha: 0,
+                    },
+                    {
+                      y: "0%",
+                      autoAlpha: 1,
+                    },
+                    0.2
+                  );
               o.length > 0 &&
                 !dsnGrid.isMobile() &&
                 u.to(o, 2, {
@@ -2072,6 +2152,46 @@ function contactValidator() {
                   });
             } else {
               /* Reset for CSS changes – Still need a better way to do this! */
+              a.length &&
+                u.fromTo(
+                  a,
+                  0.8,
+                  {
+                    y: "15%",
+                    autoAlpha: 0,
+                  },
+                  {
+                    y: "0%",
+                    autoAlpha: 1,
+                  }
+                ),
+                l.length &&
+                  u.fromTo(
+                    l,
+                    0.3,
+                    {
+                      y: "15%",
+                      autoAlpha: 0,
+                    },
+                    {
+                      y: "0%",
+                      autoAlpha: 1,
+                    }
+                  ),
+                r.length &&
+                  u.staggerFromTo(
+                    r,
+                    1,
+                    {
+                      y: "15%",
+                      autoAlpha: 0,
+                    },
+                    {
+                      y: "0%",
+                      autoAlpha: 1,
+                    },
+                    0.2
+                  );
               o.length > 0 &&
                 !dsnGrid.isMobile() &&
                 u.to(o, 2, {
@@ -2108,77 +2228,7 @@ function contactValidator() {
           mediaSize();
           /* Attach the function to the resize event listener */
           window.addEventListener("resize", mediaSize, false);
-          s.length &&
-            (dsnGrid.convertTextLine(s.find(".title")),
-            a.length &&
-              TweenLite.set(s.find(".dsn-chars-wrapper , .metas"), {
-                y: "+=" + a.height(),
-              }),
-            l.length &&
-              TweenLite.set(s.find(".dsn-chars-wrapper , .metas"), {
-                y: "+=" + (l.height() - 30),
-              }),
-            u.to(
-              s.find(".metas"),
-              1,
-              {
-                force3D: !0,
-                y: "0",
-                ease: Back.easeOut.config(1.7),
-              },
-              0
-            ),
-            u.staggerTo(
-              dsnGrid.randomObjectArray(s.find(".dsn-chars-wrapper"), 0.8),
-              1.5,
-              {
-                force3D: !0,
-                y: "0",
-                ease: Back.easeOut.config(1.7),
-              },
-              0.1,
-              0
-            )),
-            a.length &&
-              u.fromTo(
-                a,
-                0.8,
-                {
-                  y: "15%",
-                  autoAlpha: 0,
-                },
-                {
-                  y: "0%",
-                  autoAlpha: 1,
-                }
-              ),
-            l.length &&
-              u.fromTo(
-                l,
-                0.3,
-                {
-                  y: "15%",
-                  autoAlpha: 0,
-                },
-                {
-                  y: "0%",
-                  autoAlpha: 1,
-                }
-              ),
-            r.length &&
-              u.staggerFromTo(
-                r,
-                1,
-                {
-                  y: "15%",
-                  autoAlpha: 0,
-                },
-                {
-                  y: "0%",
-                  autoAlpha: 1,
-                },
-                0.2
-              );
+
           let f = dsnGrid.tweenMaxParallax(d, t).addParrlax({
             id: i,
             triggerHook: 0,
