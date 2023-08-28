@@ -1554,6 +1554,12 @@ function contactValidator() {
             a = e("#dsn-acne-description"),
             l = e("#dsn-acne-desc-items"),
             r = l.find(".descrption-item"),
+            t2 = e(".text2"),
+            t3 = e(".text3"),
+            t4 = e(".text4"),
+            t5 = e(".text5"),
+            t6 = e(".text6"),
+            t7 = e(".text7"),
             c = e(i).find(".scroll-d img"),
             u = new TimelineLite();
           function mediaSize() {
@@ -1739,6 +1745,96 @@ function contactValidator() {
                   });
             } else {
               /* Reset for CSS changes – Still need a better way to do this! */
+              t2.length > 0 &&
+                u.fromTo(
+                  t2,
+                  1,
+                  {
+                    y: "150%",
+                    autoAlpha: 0,
+                    delay: 10,
+                  },
+                  {
+                    y: "0%",
+                    autoAlpha: 1,
+                    ease: Back.easeOut.config(1.7),
+                  }
+                );
+              t3.length > 0 &&
+                u.fromTo(
+                  t3,
+                  1,
+                  {
+                    y: "150%",
+                    autoAlpha: 0,
+                    delay: 10,
+                  },
+                  {
+                    y: "0%",
+                    autoAlpha: 1,
+                    ease: Back.easeOut.config(1.7),
+                  }
+                );
+              t4.length &&
+                u.fromTo(
+                  t4,
+                  1,
+                  {
+                    y: "150%",
+                    autoAlpha: 0,
+                    delay: 10,
+                  },
+                  {
+                    y: "0%",
+                    autoAlpha: 1,
+                    ease: Back.easeOut.config(1.7),
+                  }
+                );
+              t5.length > 0 &&
+                u.fromTo(
+                  t5,
+                  1,
+                  {
+                    y: "150%",
+                    autoAlpha: 0,
+                    delay: 10,
+                  },
+                  {
+                    y: "0%",
+                    autoAlpha: 1,
+                    ease: Back.easeOut.config(1.7),
+                  }
+                );
+              t6.length > 0 &&
+                u.fromTo(
+                  t6,
+                  1,
+                  {
+                    y: "150%",
+                    autoAlpha: 0,
+                    delay: 10,
+                  },
+                  {
+                    y: "0%",
+                    autoAlpha: 1,
+                    ease: Back.easeOut.config(1.7),
+                  }
+                );
+              t7.length > 0 &&
+                u.fromTo(
+                  t7,
+                  1,
+                  {
+                    y: "150%",
+                    autoAlpha: 0,
+                    delay: 10,
+                  },
+                  {
+                    y: "0%",
+                    autoAlpha: 1,
+                    ease: Back.easeOut.config(1.7),
+                  }
+                );
               o.length > 0 &&
                 u.to(o, 2, {
                   width: "100%",
@@ -1861,7 +1957,7 @@ function contactValidator() {
           let f = dsnGrid.tweenMaxParallax(d, t).addParrlax({
             id: i,
             triggerHook: 0,
-            duration: 2100,
+            duration: 3100,
             tween: u,
             _fixed: !0,
           });
@@ -1876,7 +1972,25 @@ function contactValidator() {
               );
             }),
             f && n.push(f),
-            (i = c = c = u = f = o = box = boxl = r = l = a = s = null);
+            (i =
+              c =
+              c =
+              u =
+              f =
+              o =
+              box =
+              boxl =
+              t2 =
+              t3 =
+              t4 =
+              t5 =
+              t6 =
+              t7 =
+              r =
+              l =
+              a =
+              s =
+                null);
         },
         headerPigmentation: function () {
           let i = '[data-dsn-header="pigmentation"]';

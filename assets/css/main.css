@@ -504,6 +504,21 @@ header .header-page .subtitle-page {
   padding: 5px;
 }
 
+.fwrd-text-style .description h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.fwrd-text-style .description h1 .headingText {
+  color: var(--bs-primary);
+  position: absolute;
+}
+
+.fwrd-text-style .description {
+  right: auto;
+  left: 0;
+}
+
 /* ! Title and Subtitle section */
 .title-cover {
   font-size: 6rem;
@@ -2249,4 +2264,40 @@ header .header-page .subtitle-page {
     font-size: 1.25rem;
     letter-spacing: 2px;
   }
+}
+
+.home-product {
+  overflow: hidden;
+}
+
+.fwrd-text-style .title {
+  display: flex;
+}
+
+.fwrd-text {
+  white-space: nowrap;
+}
+
+.text-style {
+  height: 60px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-style span {
+  color: #da4a00;
+  padding: 0 10px;
+}
+
+.texttt {
+  opacity: 0;
+  position: absolute;
+  background: #e5e5e5;
+  width: 100%;
+  text-align: left;
+}
+
+.texttt &:nth-child(1) {
+  opacity: 1;
 }
