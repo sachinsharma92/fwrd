@@ -1775,6 +1775,37 @@ function contactValidator() {
                 stagger: 0.1,
               });
 
+              box.length > 0 &&
+                u.to(box, 2, {
+                  width: "100%",
+                  height: "100%",
+                  border: "0",
+                  borderLeft: "outset",
+                  borderBottom: "outset",
+                  rotationX: "6",
+                  rotationY: "5",
+                  skewX: "0",
+                  skewY: "-2",
+                  scale: "0.8",
+                  x: "10%",
+                  y: "-15%",
+                }),
+                boxl.length > 0 &&
+                  u.to(boxl, 2, {
+                    width: "100%",
+                    height: "100%",
+                    border: "0",
+                    borderLeft: "outset",
+                    borderBottom: "outset",
+                    rotationX: "6",
+                    rotationY: "5",
+                    skewX: "0",
+                    skewY: "-2",
+                    scale: "0.8",
+                    x: "10%",
+                    y: "-15%",
+                  });
+
               // Text 2 code here
               t2.length > 0 &&
                 u.from(t2, 2, {
@@ -1807,6 +1838,37 @@ function contactValidator() {
                 stagger: 0.1,
               });
 
+              box.length > 0 &&
+                u.to(box, 2, {
+                  width: "100%",
+                  height: "100%",
+                  border: "0",
+                  borderLeft: "outset",
+                  borderBottom: "outset",
+                  rotationX: "6",
+                  rotationY: "10",
+                  skewX: "0",
+                  skewY: "-2",
+                  scale: "0.8",
+                  x: "10%",
+                  y: "-15%",
+                }),
+                boxl.length > 0 &&
+                  u.to(boxl, 2, {
+                    width: "100%",
+                    height: "100%",
+                    border: "0",
+                    borderLeft: "outset",
+                    borderBottom: "outset",
+                    rotationX: "6",
+                    rotationY: "10",
+                    skewX: "0",
+                    skewY: "-2",
+                    scale: "0.8",
+                    x: "10%",
+                    y: "-15%",
+                  });
+
               // Text 4 code here
               t4.length > 0 &&
                 u.from(t4, 2, {
@@ -1837,6 +1899,37 @@ function contactValidator() {
                 ease: "power4.out",
               });
 
+              box.length > 0 &&
+                u.to(box, 2, {
+                  width: "100%",
+                  height: "100%",
+                  border: "0",
+                  borderLeft: "outset",
+                  borderBottom: "outset",
+                  rotationX: "6",
+                  rotationY: "20",
+                  skewX: "0",
+                  skewY: "-2",
+                  scale: "0.8",
+                  x: "10%",
+                  y: "-15%",
+                }),
+                boxl.length > 0 &&
+                  u.to(boxl, 2, {
+                    width: "100%",
+                    height: "100%",
+                    border: "0",
+                    borderLeft: "outset",
+                    borderBottom: "outset",
+                    rotationX: "6",
+                    rotationY: "20",
+                    skewX: "0",
+                    skewY: "-2",
+                    scale: "0.8",
+                    x: "10%",
+                    y: "-15%",
+                  });
+
               // Text 6 code here
               t6.length > 0 &&
                 u.from(t6, 2, {
@@ -1865,6 +1958,7 @@ function contactValidator() {
                 delay: 2,
                 ease: "power4.out",
               });
+
               box.length > 0 &&
                 u.to(box, 2, {
                   width: "100%",
@@ -1904,7 +1998,7 @@ function contactValidator() {
           let f = dsnGrid.tweenMaxParallax(d, t).addParrlax({
             id: i,
             triggerHook: 0,
-            duration: 2100,
+            duration: 4100,
             tween: u,
             _fixed: !0,
           });
