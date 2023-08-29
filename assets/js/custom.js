@@ -2454,10 +2454,13 @@ function contactValidator() {
                 y: "-100%",
               },
               {
-                y: "200%",
+                y: "250%",
                 rotation: 90 * 1,
               }
             ),
+            u.to(s, 0.8, {
+              y: "210%",
+            }),
             a.length &&
               u.fromTo(
                 a,
@@ -2703,7 +2706,7 @@ function contactValidator() {
           o.length > 0 &&
             !dsnGrid.isMobile() &&
             u.to(o, 2, {
-              height: "80vh",
+              width: "100%",
             }),
             s.length &&
               (dsnGrid.convertTextLine(s.find(".title")),
@@ -2711,7 +2714,7 @@ function contactValidator() {
                 TweenLite.set(
                   s.find(".dsn-word-wrapper:first .dsn-chars-wrapper"),
                   {
-                    x: "-=" + (s.width() - 100),
+                    x: "-=" + (s.width() - 30),
                   }
                 ),
               0),
@@ -2725,26 +2728,48 @@ function contactValidator() {
                   }
                 ),
               0),
-            l.length &&
-              TweenLite.set(s.find(".dsn-chars-wrapper"), {
-                y: "+=" + (l.height() - 50),
-              }),
+            a.length &&
+              u.fromTo(
+                a,
+                0.8,
+                {
+                  y: "15%",
+                  autoAlpha: 0,
+                },
+                {
+                  y: "0%",
+                  autoAlpha: 1,
+                }
+              ),
             u.to(
               s.find(".dsn-chars-wrapper"),
               1,
               {
                 rotationZ: "0",
-                opacity: "0.3",
+                opacity: "1",
                 visibility: "visible",
                 x: "0",
+                y: "0%",
                 left: "0px",
+                ease: Back.easeOut.config(0.5),
               },
+              u.to(
+                s.find(".metas"),
+                1,
+                {
+                  rotationZ: "0",
+                  x: "0",
+                  y: "0%",
+                  left: "0px",
+                  ease: Back.easeOut.config(0.5),
+                },
+                0
+              ),
               u.staggerTo(
                 dsnGrid.randomObjectArray(s.find(".dsn-chars-wrapper"), 0.8),
                 1.5,
                 {
                   force3D: !0,
-                  opacity: "1",
                   y: "0",
                   ease: Back.easeOut.config(1.7),
                 },
@@ -2752,9 +2777,9 @@ function contactValidator() {
                 0
               )
             ),
-            a.length &&
+            w.length &&
               u.fromTo(
-                a,
+                w,
                 0.8,
                 {
                   y: "15%",
@@ -2810,7 +2835,7 @@ function contactValidator() {
               );
             }),
             f && n.push(f),
-            (i = c = c = u = f = o = r = l = a = w = s = null);
+            (i = c = c = u = f = o = a = r = l = w = s = null);
         },
         headerBelief: function () {
           let i = '[data-dsn-header="belief"]';
@@ -3647,7 +3672,7 @@ function contactValidator() {
             o.to(n.find(".icon-top"), 0.5, {
               width: 23,
               rotation: 45,
-              top: 6,
+              top: 0,
               ease: a,
             }),
             o.to(

@@ -1287,7 +1287,6 @@ header .header-page .subtitle-page {
 }
 
 .work_2.our-work .item-info p {
-  font-size: 19px;
   color: black !important;
 }
 .work_2.our-work .item-info h3 {
@@ -1333,15 +1332,14 @@ header .header-page .subtitle-page {
   top: 20px;
   transform: translate(-50%);
   left: 50%;
-  margin-left: 74%;
+  margin-left: 94%;
 }
 
 .header-project.header_our .info-group {
   position: absolute;
   bottom: auto;
   top: 0;
-  right: 10vw;
-  max-width: 270px;
+  left: 54vw;
 }
 
 .header-project.header_our .info-group .description {

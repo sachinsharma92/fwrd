@@ -2656,7 +2656,7 @@ a:hover {
 
 .site-header .menu-icon .icon-m .menu-icon-line {
   background-color: #fe5e00;
-  width: 23px;
+  width: 23px !important;
   height: 2px;
   -webkit-transition: -webkit-transform 0.2s ease-Out;
   transition: -webkit-transform 0.2s ease-Out;
@@ -2665,18 +2665,13 @@ a:hover {
   transition: transform 0.2s ease-Out, -webkit-transform 0.2s ease-Out;
 }
 
-.site-header .menu-icon .icon-m .menu-icon-line.icon-top {
+/* .site-header .menu-icon .icon-m .menu-icon-line.icon-top {
   width: 5px;
-}
+} */
 
 .site-header .menu-icon .icon-m .menu-icon-line.icon-center {
   width: 14px;
 }
-
-.site-header .menu-icon .icon-m .menu-icon-line.icon-bottom {
-  margin-top: 5px;
-}
-
 .site-header .menu-icon .icon-m .icon-circle {
   position: absolute;
   top: -5px;
@@ -2688,6 +2683,17 @@ a:hover {
   display: none;
 }
 
+.icon-m {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.nav-active .icon-m {
+  gap: 3px;
+  margin-top: 8px;
+}
+
 .site-header .menu-icon .icon-m:hover .icon-circle {
   display: inherit;
 }
@@ -2695,7 +2701,7 @@ a:hover {
   color: #000;
 }
 .site-header .menu-icon .text-menu {
-  top: -5px;
+  top: -9px;
   width: 4rem;
   margin-right: 0.625rem;
   font-weight: 600;
