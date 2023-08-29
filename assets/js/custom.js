@@ -1554,6 +1554,7 @@ function contactValidator() {
             a = e("#dsn-acne-description"),
             l = e("#dsn-acne-desc-items"),
             r = l.find(".descrption-item"),
+            t1 = e(".text1"),
             t2 = e(".text2"),
             t3 = e(".text3"),
             t4 = e(".text4"),
@@ -1745,96 +1746,6 @@ function contactValidator() {
                   });
             } else {
               /* Reset for CSS changes – Still need a better way to do this! */
-              t2.length > 0 &&
-                u.fromTo(
-                  t2,
-                  1,
-                  {
-                    y: "150%",
-                    autoAlpha: 0,
-                    delay: 10,
-                  },
-                  {
-                    y: "0%",
-                    autoAlpha: 1,
-                    ease: Back.easeOut.config(1),
-                  }
-                );
-              t3.length > 0 &&
-                u.fromTo(
-                  t3,
-                  1,
-                  {
-                    y: "150%",
-                    autoAlpha: 0,
-                    delay: 10,
-                  },
-                  {
-                    y: "0%",
-                    autoAlpha: 1,
-                    ease: Back.easeOut.config(1),
-                  }
-                );
-              t4.length &&
-                u.fromTo(
-                  t4,
-                  1,
-                  {
-                    y: "150%",
-                    autoAlpha: 0,
-                    delay: 10,
-                  },
-                  {
-                    y: "0%",
-                    autoAlpha: 1,
-                    ease: Back.easeOut.config(1),
-                  }
-                );
-              t5.length > 0 &&
-                u.fromTo(
-                  t5,
-                  1,
-                  {
-                    y: "150%",
-                    autoAlpha: 0,
-                    delay: 10,
-                  },
-                  {
-                    y: "0%",
-                    autoAlpha: 1,
-                    ease: Back.easeOut.config(1),
-                  }
-                );
-              t6.length > 0 &&
-                u.fromTo(
-                  t6,
-                  1,
-                  {
-                    y: "150%",
-                    autoAlpha: 0,
-                    delay: 10,
-                  },
-                  {
-                    y: "0%",
-                    autoAlpha: 1,
-                    ease: Back.easeOut.config(1),
-                  }
-                );
-              t7.length > 0 &&
-                u.fromTo(
-                  t7,
-                  1,
-                  {
-                    y: "150%",
-                    autoAlpha: 0,
-                    delay: 10,
-                  },
-                  {
-                    y: "0%",
-                    autoAlpha: 1,
-                    ease: Back.easeOut.config(1),
-                  }
-                );
               o.length > 0 &&
                 u.to(o, 2, {
                   width: "100%",
@@ -1848,21 +1759,127 @@ function contactValidator() {
                   x: "-50%",
                   y: "-50%",
                 }),
-                box.length > 0 &&
-                  u.to(box, 2, {
-                    width: "100%",
-                    height: "100%",
-                    border: "0",
-                    borderLeft: "outset",
-                    borderBottom: "outset",
-                    rotationX: "6",
-                    rotationY: "24",
-                    skewX: "0",
-                    skewY: "-2",
-                    scale: "0.8",
-                    x: "10%",
-                    y: "-15%",
-                  }),
+                // Text 1 code here
+                t1.length > 0 &&
+                  u.from(t1, 2, {
+                    duration: 1.5,
+                    yPercent: 0,
+                    ease: "power4.out",
+                    stagger: 0.1,
+                  });
+              u.to(t1, 2, {
+                autoAlpha: 0,
+                yPercent: -100,
+                delay: 2,
+                ease: "power4.out",
+                stagger: 0.1,
+              });
+
+              // Text 2 code here
+              t2.length > 0 &&
+                u.from(t2, 2, {
+                  duration: 1.5,
+                  yPercent: 100,
+                  ease: "power4.out",
+                  stagger: 0.1,
+                });
+              u.to(t2, 2, {
+                autoAlpha: 0,
+                delay: 2,
+                yPercent: -100,
+                ease: "power4.out",
+                stagger: 0.1,
+              });
+
+              // Text 3 code here
+              t3.length > 0 &&
+                u.from(t3, 2, {
+                  duration: 1.5,
+                  yPercent: 100,
+                  ease: "power4.out",
+                  stagger: 0.1,
+                });
+              u.to(t3, 2, {
+                autoAlpha: 0,
+                yPercent: -100,
+                delay: 2,
+                ease: "power4.out",
+                stagger: 0.1,
+              });
+
+              // Text 4 code here
+              t4.length > 0 &&
+                u.from(t4, 2, {
+                  duration: 1.5,
+                  yPercent: 100,
+                  ease: "power4.out",
+                  stagger: 0.1,
+                });
+              u.to(t4, 2, {
+                autoAlpha: 0,
+                yPercent: -100,
+                delay: 2,
+                ease: "power4.out",
+              });
+
+              // Text 5 code here
+              t5.length > 0 &&
+                u.from(t5, 2, {
+                  duration: 1.5,
+                  yPercent: 100,
+                  ease: "power4.out",
+                  stagger: 0.1,
+                });
+              u.to(t5, 2, {
+                autoAlpha: 0,
+                yPercent: -100,
+                delay: 2,
+                ease: "power4.out",
+              });
+
+              // Text 6 code here
+              t6.length > 0 &&
+                u.from(t6, 2, {
+                  duration: 1.5,
+                  yPercent: 100,
+                  ease: "power4.out",
+                  stagger: 0.1,
+                });
+              u.to(t6, 2, {
+                autoAlpha: 0,
+                yPercent: -100,
+                delay: 2,
+                ease: "power4.out",
+              });
+
+              // Text 7 code here
+              t7.length > 0 &&
+                u.from(t7, 2, {
+                  duration: 1.5,
+                  yPercent: 100,
+                  ease: "power4.out",
+                  stagger: 0.1,
+                });
+              u.to(t7, 2, {
+                yPercent: 0,
+                delay: 2,
+                ease: "power4.out",
+              });
+              box.length > 0 &&
+                u.to(box, 2, {
+                  width: "100%",
+                  height: "100%",
+                  border: "0",
+                  borderLeft: "outset",
+                  borderBottom: "outset",
+                  rotationX: "6",
+                  rotationY: "24",
+                  skewX: "0",
+                  skewY: "-2",
+                  scale: "0.8",
+                  x: "10%",
+                  y: "-15%",
+                }),
                 boxl.length > 0 &&
                   u.to(boxl, 2, {
                     width: "100%",
@@ -1884,76 +1901,6 @@ function contactValidator() {
           mediaSize();
           /* Attach the function to the resize event listener */
           window.addEventListener("resize", mediaSize, false);
-          s.length &&
-            (dsnGrid.convertTextLine(s.find(".title")),
-            a.length &&
-              TweenLite.set(s.find(".dsn-chars-wrapper , .metas"), {
-                y: "+=" + a.height(),
-              }),
-            l.length &&
-              TweenLite.set(s.find(".dsn-chars-wrapper , .metas"), {
-                y: "+=" + (l.height() - 30),
-              }),
-            u.to(
-              s.find(".metas"),
-              1,
-              {
-                force3D: !0,
-                y: "0",
-                ease: Back.easeOut.config(1.7),
-              },
-              0
-            ),
-            u.staggerTo(
-              dsnGrid.randomObjectArray(s.find(".dsn-chars-wrapper"), 0.8),
-              1.5,
-              {
-                force3D: !0,
-                y: "0",
-                ease: Back.easeOut.config(1.7),
-              },
-              0.1,
-              0
-            )),
-            a.length &&
-              u.fromTo(
-                a,
-                0.8,
-                {
-                  y: "15%",
-                  x: "5rem",
-                },
-                {
-                  y: "0%",
-                }
-              ),
-            l.length &&
-              u.fromTo(
-                l,
-                0.3,
-                {
-                  y: "15%",
-                  autoAlpha: 0,
-                },
-                {
-                  y: "0%",
-                  autoAlpha: 1,
-                }
-              ),
-            r.length &&
-              u.staggerFromTo(
-                r,
-                1,
-                {
-                  y: "15%",
-                  autoAlpha: 0,
-                },
-                {
-                  y: "0%",
-                  autoAlpha: 1,
-                },
-                0.2
-              );
           let f = dsnGrid.tweenMaxParallax(d, t).addParrlax({
             id: i,
             triggerHook: 0,
@@ -1980,6 +1927,7 @@ function contactValidator() {
               o =
               box =
               boxl =
+              t1 =
               t2 =
               t3 =
               t4 =

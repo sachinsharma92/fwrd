@@ -503,22 +503,6 @@ header .header-page .subtitle-page {
   max-width: 605px;
   padding: 5px;
 }
-
-.fwrd-text-style .description h1 {
-  display: flex;
-  justify-content: center;
-}
-
-.fwrd-text-style .description h1 .headingText {
-  color: var(--bs-primary);
-  position: absolute;
-}
-
-.fwrd-text-style .description {
-  right: auto;
-  left: 0;
-}
-
 /* ! Title and Subtitle section */
 .title-cover {
   font-size: 6rem;
@@ -1270,12 +1254,8 @@ header .header-page .subtitle-page {
 .work_2.our-work .work-item {
   display: flex;
   align-items: center;
-  padding: 0 50px;
+  padding: 0 120px;
   gap: 50px;
-}
-
-.work_2.scroll-slider {
-  background: black;
 }
 
 .work_2.our-work .img-next-box {
@@ -1283,7 +1263,21 @@ header .header-page .subtitle-page {
   height: 538px;
   box-shadow: 0 5px 32px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
-  overflow: hidden;
+}
+
+.work_2.our-work .img-next-box {
+  position: relative;
+}
+
+.work_2.our-work .img-next-box::before {
+  position: absolute;
+  top: 64px;
+  left: -44px;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: black;
+  opacity: 1;
 }
 
 .work_2.our-work .item-info {
@@ -1294,8 +1288,11 @@ header .header-page .subtitle-page {
 
 .work_2.our-work .item-info p {
   font-size: 19px;
+  color: black !important;
 }
-
+.work_2.our-work .item-info h3 {
+  color: #fe5e00 !important;
+}
 .work_2.our-work .work-item {
   min-width: 100vw;
 }
@@ -2280,24 +2277,41 @@ header .header-page .subtitle-page {
 
 .text-style {
   height: 60px;
+  position: relative;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
 }
 
-.text-style span {
+.text-style {
   color: #da4a00;
-  padding: 0 10px;
 }
 
 .texttt {
-  opacity: 0;
   position: absolute;
   background: #e5e5e5;
+  height: 60px;
+  text-align: center;
+  white-space: nowrap;
+  left: 0;
   width: 100%;
-  text-align: left;
 }
 
-.texttt &:nth-child(1) {
-  opacity: 1;
+.texttt span {
+  color: #000;
+}
+
+.fwrd-text-style .description h1 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.fwrd-text-style .description h1 .headingText {
+  color: var(--bs-primary);
+  position: absolute;
+}
+
+.fwrd-text-style .description {
+  right: auto;
+  left: 0;
 }
