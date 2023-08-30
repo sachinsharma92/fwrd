@@ -5305,6 +5305,12 @@ a:hover {
   height: 100vh;
 }
 
+@media only screen and (max-width: 767px) {
+  .our-work .work-item {
+    height: auto;
+  }
+}
+
 .our-work .work-item .img-next-box:before {
   z-index: -1;
 }
@@ -5420,15 +5426,15 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.our-work .work-item:hover .item-info {
+/* .our-work .work-item:hover .item-info {
   -webkit-transform: translate(0, -50px);
   -ms-transform: translate(0, -50px);
   transform: translate(0, -50px);
-}
+} */
 
-.our-work .work-item:hover .item-info h4 {
+/* .our-work .work-item:hover .item-info h4 {
   margin-bottom: 10px;
-}
+} */
 
 .our-work .work-item:hover .item-info span {
   opacity: 1;

@@ -532,6 +532,16 @@ header .header-page .subtitle-page {
   color: inherit;
 }
 
+@media only screen and (min-width: 1600px) {
+  #dsn-pigmentation-description.description {
+    left: 46%;
+  }
+
+  .home-product.header-project .intro-project-details {
+    left: 46%;
+  }
+}
+
 .v-light:not(.no-light) .section-p h2.title {
   color: var(--bs-primary);
 }
@@ -539,6 +549,17 @@ header .header-page .subtitle-page {
 /* ! Work slick slider */
 .our-work .work-item {
   height: 80vh;
+}
+
+@media only screen and (max-width: 767px) {
+  .our-work .transform-3d {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .our-work .work-item {
+    height: auto;
+  }
 }
 
 .our-work .slick-list .slick-slide {
@@ -1008,6 +1029,12 @@ header .header-page .subtitle-page {
   transition: transform 1s;
 }
 
+@media (min-width: 1600px) {
+  .L_shap {
+    top: 15rem;
+  }
+}
+
 .L_shap-bottom {
   transform: rotateY(8deg) rotateX(0deg) rotateZ(-6deg) skewY(6deg) skewX(-6deg)
     translateX(35.5%) translateY(-10%) translateZ(-100px) !important;
@@ -1291,6 +1318,19 @@ header .header-page .subtitle-page {
   border-radius: 4px;
 }
 
+@media only screen and (max-width: 767px) {
+  .work_2.our-work .work-item {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .work_2.our-work .img-next-box {
+    min-width: 300px;
+    max-width: 100%;
+    height: 538px;
+  }
+}
+
 .work_2.our-work .img-next-box {
   position: relative;
 }
@@ -1310,6 +1350,12 @@ header .header-page .subtitle-page {
   display: flex;
   flex-direction: column;
   gap: 0 50px;
+}
+
+@media only screen and (min-width: 1600px) {
+  .work_2.our-work .item-info {
+    max-width: 50%;
+  }
 }
 
 .work_2.our-work .item-info p {
@@ -1336,6 +1382,25 @@ header .header-page .subtitle-page {
 .our.title {
   max-width: 100%;
   text-align: left;
+}
+
+.header_our .title {
+  display: flex;
+  flex-direction: column;
+  line-height: 10rem !important;
+}
+
+.header_our.header-project .description {
+  margin-top: -25px;
+}
+
+@media only screen and (max-width: 767px) {
+  .header_our .title {
+    line-height: 6rem !important;
+  }
+  .header_our.header-project .description {
+    margin-top: 35px;
+  }
 }
 
 .our.title .dsn-chars-wrapper {
@@ -1366,6 +1431,12 @@ header .header-page .subtitle-page {
   bottom: auto;
   top: 0;
   left: 54vw;
+}
+
+@media only screen and (min-width: 1600px) {
+  .header-project.header_our .info-group {
+    left: 41vw;
+  }
 }
 
 .header-project.header_our .info-group .description {
@@ -1946,7 +2017,7 @@ header .header-page .subtitle-page {
   .work_2.our-work .img-next-box {
     width: 70%;
     height: 35vh;
-    top: 8rem;
+    /* top: 8rem; */
   }
 
   .work_2.our-work .item-info {
@@ -2068,11 +2139,6 @@ header .header-page .subtitle-page {
     left: 32%;
   }
 
-  .work_2.our-work .img-next-box {
-    width: 90%;
-    height: 35vh;
-  }
-
   .work_2.our-work .item-info {
     height: 46vh;
     max-width: 84%;
@@ -2143,8 +2209,8 @@ header .header-page .subtitle-page {
 
   .box {
     height: 100%;
-    top: 25%;
-    scale: 0.35;
+    top: 15%;
+    scale: 0.45;
     transform: rotateY(-30deg) rotateX(-6deg) skewY(2deg) skewX(-2deg)
       translateX(-50%) translateY(-30%) translateZ(-50px);
   }
@@ -2153,7 +2219,7 @@ header .header-page .subtitle-page {
     top: -68%;
     scale: 0.4;
     transform: rotateY(-9deg) rotateX(0deg) rotateZ(-6deg) skewY(6deg)
-      skewX(-6deg) translateX(-45%) translateY(-20%) translateZ(-100px);
+      skewX(-6deg) translateX(-45%) translateY(-10%) translateZ(-100px);
   }
 
   #dsn-pigmentation-desc-items.intro-project-details,
@@ -2226,7 +2292,7 @@ header .header-page .subtitle-page {
   }
 
   .work_2.our-work .item-info {
-    height: 52vh;
+    height: auto;
     max-width: 100%;
   }
 
@@ -2362,4 +2428,16 @@ header .header-page .subtitle-page {
 /* dsn-ourwork */
 #dsn-ourwork h2 .dsn-word-wrapper:nth-child(2) {
   white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hide-desktop {
+    display: none;
+  }
 }
