@@ -2358,3 +2358,8 @@ header .header-page .subtitle-page {
 .three-D-box {
   z-index: 1;
 }
+
+/* dsn-ourwork */
+#dsn-ourwork h2 .dsn-word-wrapper:nth-child(2) {
+  white-space: nowrap;
+}
