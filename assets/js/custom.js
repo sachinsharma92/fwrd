@@ -2424,7 +2424,8 @@ function contactValidator() {
             !dsnGrid.isMobile() &&
             u.to(o, 2, {
               width: "100%",
-            }),
+            });
+          if (window.matchMedia("(min-width: 1024px)").matches) {
             s.length &&
               u.fromTo(
                 s,
@@ -2438,42 +2439,56 @@ function contactValidator() {
                   autoAlpha: 1,
                 }
               ),
-            u.staggerTo(
-              1.5,
-              {
-                y: "0",
-                ease: Back.easeOut.config(1.7),
-              },
-              0.1,
-              0
-            ),
-            u.fromTo(
-              s,
-              0.8,
-              {
-                y: "-100%",
-              },
-              {
-                y: "250%",
-                rotation: 90 * 1,
-              }
-            ),
-            u.to(s, 0.8, {
-              y: "210%",
-            }),
-            a.length &&
+              u.staggerTo(
+                1.5,
+                {
+                  y: "0",
+                  ease: Back.easeOut.config(1.7),
+                },
+                0.1
+              ),
               u.fromTo(
-                a,
+                s,
                 0.8,
                 {
-                  y: "15%",
+                  y: "-100%",
+                },
+                {
+                  y: "250%",
+                  rotation: 90,
+                }
+              ),
+              u.to(s, 0.8, {
+                y: "210%",
+              });
+          } else {
+            s.length &&
+              u.fromTo(
+                s,
+                0.8,
+                {
+                  y: "50%",
                   autoAlpha: 0,
                 },
                 {
                   y: "0%",
                   autoAlpha: 1,
                 }
-              ),
+              );
+          }
+          a.length &&
+            u.fromTo(
+              a,
+              0.8,
+              {
+                y: "15%",
+                autoAlpha: 0,
+              },
+              {
+                y: "0%",
+                autoAlpha: 1,
+              }
+            ),
             w.length &&
               u.fromTo(
                 w,
@@ -2728,19 +2743,6 @@ function contactValidator() {
                   }
                 ),
               0),
-            a.length &&
-              u.fromTo(
-                a,
-                0.8,
-                {
-                  y: "15%",
-                  autoAlpha: 0,
-                },
-                {
-                  y: "0%",
-                  autoAlpha: 1,
-                }
-              ),
             u.to(
               s.find(".dsn-chars-wrapper"),
               1,
@@ -2753,6 +2755,19 @@ function contactValidator() {
                 left: "0px",
                 ease: Back.easeOut.config(0.5),
               },
+              a.length &&
+                u.fromTo(
+                  a,
+                  0.8,
+                  {
+                    y: "15%",
+                    autoAlpha: 0,
+                  },
+                  {
+                    y: "0%",
+                    autoAlpha: 1,
+                  }
+                ),
               u.to(
                 s.find(".metas"),
                 1,
@@ -2922,7 +2937,9 @@ function contactValidator() {
                   opacity: "1",
                 },
                 {
-                  transform: "scale(.6)",
+                  transform: window.matchMedia("(max-width: 520px)").matches
+                    ? "scale(.8)"
+                    : "scale(.6)",
                   delay: "1",
                   ease: Back.easeOut.config(1.7),
                 },

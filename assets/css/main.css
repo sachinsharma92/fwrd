@@ -78,6 +78,11 @@ h2.display {
   line-height: 18rem;
 }
 
+#dsn-about-title .metas {
+  top: 54%;
+  left: 2% !important;
+}
+
 .about-sec-style .dsn-word-wrapper:last-child .dsn-chars-wrapper:last-child {
   position: relative;
 }
@@ -92,6 +97,22 @@ h2.display {
   height: 52px;
   background-color: var(--bs-primary);
   content: "";
+}
+
+@media (max-width: 767px) {
+  .about-sec-style
+    .dsn-word-wrapper:last-child
+    .dsn-chars-wrapper:last-child::before {
+    display: none;
+  }
+
+  .header_about h3.sub-title {
+    font-size: 2rem;
+  }
+
+  #dsn-about-title .metas {
+    left: 5% !important;
+  }
 }
 
 h2.display-1 {
@@ -1406,6 +1427,12 @@ header .header-page .subtitle-page {
   gap: 0 100px;
 }
 
+@media only screen and (max-width: 767px) {
+  .header-project .info-group {
+    flex-direction: column;
+  }
+}
+
 .header-project .desc-personal {
   margin-top: 25px;
 }
@@ -1850,7 +1877,6 @@ header .header-page .subtitle-page {
 
   #dsn-about-title .metas {
     top: 54%;
-    left: 10% !important;
   }
 
   .header-project.header_about .info-group {
@@ -1863,6 +1889,7 @@ header .header-page .subtitle-page {
   .belief.title {
     font-size: 12.5rem;
     line-height: 3rem;
+    white-space: nowrap;
   }
 
   .belief.title .dsn-word-wrapper:first-child {
@@ -1882,11 +1909,24 @@ header .header-page .subtitle-page {
     margin-top: 15%;
   }
 
-  .header-project.header_belief .intro-project,
-  .header-project.header_our .intro-project {
+  .header-project.header_belief .intro-project {
     width: 100%;
     margin: auto;
     max-width: 680px;
+    height: 100%;
+    padding-top: 180px;
+  }
+
+  .header-project.header_belief {
+    padding: 20px;
+  }
+
+  .header-project.header_our .info-group .description br {
+    display: none;
+  }
+
+  .header-project.header_belief .info-group .description {
+    margin-top: 240px;
   }
 
   .our.title .dsn-word-wrapper:last-child .dsn-chars-wrapper:last-child:after {
@@ -2003,11 +2043,6 @@ header .header-page .subtitle-page {
   p.lead,
   .lead p {
     font-size: 1.375rem;
-  }
-
-  #dsn-about-title .metas {
-    top: 54%;
-    left: 2% !important;
   }
 
   .header-project.header_about .info-group {
@@ -2179,8 +2214,10 @@ header .header-page .subtitle-page {
   }
 
   .header-project.header_our .info-group {
-    top: 20px;
-    left: 60%;
+    top: 0px;
+    left: 0%;
+    position: relative;
+    max-width: 80%;
   }
 
   .work_2.our-work .item-info {
