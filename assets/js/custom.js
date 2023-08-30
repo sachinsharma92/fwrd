@@ -1549,7 +1549,7 @@ function contactValidator() {
             return (i = null), !1;
           let o = e("#dsn-acne-parallax-img"),
             box = e("#dsn-3d-box"),
-            boxl = e("dsn-black-3d-L"),
+            boxl = e("#dsn-black-3d-L"),
             s = e("#dsn-acne-title"),
             a = e("#dsn-acne-description"),
             l = e("#dsn-acne-desc-items"),
@@ -1774,7 +1774,6 @@ function contactValidator() {
                 ease: "power4.out",
                 stagger: 0.1,
               });
-
               box.length > 0 &&
                 u.to(box, 2, {
                   width: "100%",
@@ -1782,8 +1781,8 @@ function contactValidator() {
                   border: "0",
                   borderLeft: "outset",
                   borderBottom: "outset",
-                  rotationX: "6",
-                  rotationY: "5",
+                  rotationX: "0",
+                  rotationY: "2",
                   skewX: "0",
                   skewY: "-2",
                   scale: "0.8",
@@ -1797,13 +1796,12 @@ function contactValidator() {
                     border: "0",
                     borderLeft: "outset",
                     borderBottom: "outset",
-                    rotationX: "6",
-                    rotationY: "5",
+                    rotationX: "0",
+                    rotationY: "1",
                     skewX: "0",
-                    skewY: "-2",
-                    scale: "0.8",
-                    x: "10%",
-                    y: "-15%",
+                    skewY: "0",
+                    x: "32%",
+                    y: "-8%",
                   });
 
               // Text 2 code here
@@ -1821,6 +1819,36 @@ function contactValidator() {
                 ease: "power4.out",
                 stagger: 0.1,
               });
+
+              box.length > 0 &&
+                u.to(box, 2, {
+                  width: "100%",
+                  height: "100%",
+                  border: "0",
+                  borderLeft: "outset",
+                  borderBottom: "outset",
+                  rotationX: "6",
+                  rotationY: "4",
+                  skewX: "0",
+                  skewY: "-2",
+                  scale: "0.8",
+                  x: "10%",
+                  y: "-15%",
+                }),
+                boxl.length > 0 &&
+                  u.to(boxl, 2, {
+                    width: "100%",
+                    height: "100%",
+                    border: "0",
+                    borderLeft: "outset",
+                    borderBottom: "outset",
+                    rotationX: "0",
+                    rotationY: "2",
+                    skewX: "0",
+                    skewY: "0",
+                    x: "32%",
+                    y: "-8%",
+                  });
 
               // Text 3 code here
               t3.length > 0 &&
@@ -1846,7 +1874,7 @@ function contactValidator() {
                   borderLeft: "outset",
                   borderBottom: "outset",
                   rotationX: "6",
-                  rotationY: "10",
+                  rotationY: "8",
                   skewX: "0",
                   skewY: "-2",
                   scale: "0.8",
@@ -1860,13 +1888,12 @@ function contactValidator() {
                     border: "0",
                     borderLeft: "outset",
                     borderBottom: "outset",
-                    rotationX: "6",
-                    rotationY: "10",
+                    rotationX: "0",
+                    rotationY: "3",
                     skewX: "0",
-                    skewY: "-2",
-                    scale: "0.8",
-                    x: "10%",
-                    y: "-15%",
+                    skewY: "0",
+                    x: "32%",
+                    y: "-8%",
                   });
 
               // Text 4 code here
@@ -1884,6 +1911,36 @@ function contactValidator() {
                 ease: "power4.out",
               });
 
+              box.length > 0 &&
+                u.to(box, 2, {
+                  width: "100%",
+                  height: "100%",
+                  border: "0",
+                  borderLeft: "outset",
+                  borderBottom: "outset",
+                  rotationX: "6",
+                  rotationY: "14",
+                  skewX: "0",
+                  skewY: "-2",
+                  scale: "0.8",
+                  x: "10%",
+                  y: "-15%",
+                }),
+                boxl.length > 0 &&
+                  u.to(boxl, 2, {
+                    width: "100%",
+                    height: "100%",
+                    border: "0",
+                    borderLeft: "outset",
+                    borderBottom: "outset",
+                    rotationX: "0",
+                    rotationY: "4",
+                    skewX: "0",
+                    skewY: "0",
+                    x: "32%",
+                    y: "-8%",
+                  });
+
               // Text 5 code here
               t5.length > 0 &&
                 u.from(t5, 2, {
@@ -1893,6 +1950,51 @@ function contactValidator() {
                   stagger: 0.1,
                 });
               u.to(t5, 2, {
+                autoAlpha: 0,
+                yPercent: -100,
+                delay: 2,
+                ease: "power4.out",
+              });
+
+              box.length > 0 &&
+                u.to(box, 2, {
+                  width: "100%",
+                  height: "100%",
+                  border: "0",
+                  borderLeft: "outset",
+                  borderBottom: "outset",
+                  rotationX: "6",
+                  rotationY: "18",
+                  skewX: "0",
+                  skewY: "-2",
+                  scale: "0.8",
+                  x: "10%",
+                  y: "-15%",
+                }),
+                boxl.length > 0 &&
+                  u.to(boxl, 2, {
+                    width: "100%",
+                    height: "100%",
+                    border: "0",
+                    borderLeft: "outset",
+                    borderBottom: "outset",
+                    rotationX: "0",
+                    rotationY: "5",
+                    skewX: "0",
+                    skewY: "0",
+                    x: "32%",
+                    y: "-8%",
+                  });
+
+              // Text 6 code here
+              t6.length > 0 &&
+                u.from(t6, 2, {
+                  duration: 1.5,
+                  yPercent: 100,
+                  ease: "power4.out",
+                  stagger: 0.1,
+                });
+              u.to(t6, 2, {
                 autoAlpha: 0,
                 yPercent: -100,
                 delay: 2,
@@ -1921,29 +2023,13 @@ function contactValidator() {
                     border: "0",
                     borderLeft: "outset",
                     borderBottom: "outset",
-                    rotationX: "6",
-                    rotationY: "20",
+                    rotationX: "0",
+                    rotationY: "8",
                     skewX: "0",
-                    skewY: "-2",
-                    scale: "0.8",
-                    x: "10%",
-                    y: "-15%",
+                    skewY: "0",
+                    x: "32%",
+                    y: "-8%",
                   });
-
-              // Text 6 code here
-              t6.length > 0 &&
-                u.from(t6, 2, {
-                  duration: 1.5,
-                  yPercent: 100,
-                  ease: "power4.out",
-                  stagger: 0.1,
-                });
-              u.to(t6, 2, {
-                autoAlpha: 0,
-                yPercent: -100,
-                delay: 2,
-                ease: "power4.out",
-              });
 
               // Text 7 code here
               t7.length > 0 &&
@@ -1981,13 +2067,12 @@ function contactValidator() {
                     border: "0",
                     borderLeft: "outset",
                     borderBottom: "outset",
-                    rotationX: "6",
-                    rotationY: "24",
+                    rotationX: "0",
+                    rotationY: "8",
                     skewX: "0",
-                    skewY: "-2",
-                    scale: "0.8",
-                    x: "10%",
-                    y: "-15%",
+                    skewY: "0",
+                    x: "32%",
+                    y: "-8%",
                   });
             }
           }
@@ -2104,22 +2189,7 @@ function contactValidator() {
                   left: "50%",
                   x: "-50%",
                   y: "-50%",
-                }),
-                box.length > 0 &&
-                  !dsnGrid.isMobile() &&
-                  u.to(box, 2, {
-                    width: "100%",
-                    height: "100%",
-                    border: "0",
-                    borderLeft: "outset",
-                    borderBottom: "outset",
-                    rotationX: "0",
-                    rotationY: "2",
-                    skewX: "0",
-                    skewY: "0",
-                    x: "28%",
-                    y: "-16%",
-                  });
+                });
             } else if (window.matchMedia("(max-width: 1600px)").matches) {
               /* Changes when we reach the min-width  */
               a.length &&
@@ -2176,22 +2246,7 @@ function contactValidator() {
                   left: "50%",
                   x: "-50%",
                   y: "-50%",
-                }),
-                box.length > 0 &&
-                  !dsnGrid.isMobile() &&
-                  u.to(box, 2, {
-                    width: "100%",
-                    height: "100%",
-                    border: "0",
-                    borderLeft: "outset",
-                    borderBottom: "outset",
-                    rotationX: "0",
-                    rotationY: "8",
-                    skewX: "0",
-                    skewY: "0",
-                    x: "36%",
-                    y: "-10%",
-                  });
+                });
             } else {
               /* Reset for CSS changes – Still need a better way to do this! */
               a.length &&
@@ -2248,22 +2303,7 @@ function contactValidator() {
                   left: "50%",
                   x: "-50%",
                   y: "-50%",
-                }),
-                box.length > 0 &&
-                  !dsnGrid.isMobile() &&
-                  u.to(box, 2, {
-                    width: "100%",
-                    height: "100%",
-                    border: "0",
-                    borderLeft: "outset",
-                    borderBottom: "outset",
-                    rotationX: "0",
-                    rotationY: "8",
-                    skewX: "0",
-                    skewY: "0",
-                    x: "32%",
-                    y: "-4%",
-                  });
+                });
             }
           }
           /* Call the function */

@@ -496,7 +496,7 @@ header .header-page .subtitle-page {
   margin-top: -22%;
   max-width: 680px;
   width: 100%;
-  left: 47%;
+  left: 42%;
   text-align: left;
 }
 
@@ -520,7 +520,7 @@ header .header-page .subtitle-page {
 }
 
 .home-product.header-project .intro-project-details {
-  left: 47%;
+  left: 42%;
   max-width: 605px;
   padding: 5px;
 }
@@ -1006,6 +1006,11 @@ header .header-page .subtitle-page {
   transform: rotateY(-9deg) rotateX(0deg) rotateZ(-6deg) skewY(6deg)
     skewX(-6deg) translateX(32%) translateY(0%) translateZ(-100px);
   transition: transform 1s;
+}
+
+.L_shap-bottom {
+  transform: rotateY(8deg) rotateX(0deg) rotateZ(-6deg) skewY(6deg) skewX(-6deg)
+    translateX(35.5%) translateY(-10%) translateZ(-100px) !important;
 }
 
 .cube_L {
@@ -2348,4 +2353,8 @@ header .header-page .subtitle-page {
 .fwrd-text-style .description {
   right: auto;
   left: 0;
+}
+
+.three-D-box {
+  z-index: 1;
 }
