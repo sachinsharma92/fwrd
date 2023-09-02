@@ -107,7 +107,11 @@ h2.display {
   }
 
   .header_about h3.sub-title {
-    font-size: 2rem;
+    font-size: 3rem;
+  }
+
+  .header_about {
+    padding-bottom: 150px;
   }
 
   #dsn-about-title .metas {
@@ -278,12 +282,6 @@ ul.line-list li:before {
   }
 }
 
-/* @media (min-width: 1920px) {
-  .container {
-    max-width: 1170px;
-  }
-} */
-
 header .header-page .subtitle-page {
   font-weight: 100;
 }
@@ -309,7 +307,7 @@ header .header-page .subtitle-page {
   .extend-container
   .main-navigation
   ul.extend-container
-  li:nth-last-child(2) {
+  li:last-child {
   font-size: 2rem;
 }
 
@@ -317,7 +315,7 @@ header .header-page .subtitle-page {
   .extend-container
   .main-navigation
   ul.extend-container
-  li:nth-last-child(2) {
+  li:last-child {
   margin-top: 4rem;
 }
 
@@ -552,13 +550,8 @@ header .header-page .subtitle-page {
 }
 
 @media only screen and (max-width: 767px) {
-  .our-work .transform-3d {
-    display: flex;
-    flex-direction: column;
-  }
-
   .our-work .work-item {
-    height: auto;
+    height: 100vh;
   }
 }
 
@@ -639,10 +632,6 @@ header .header-page .subtitle-page {
   }
 }
 
-/* .our-work .work-item .item-info{
-    top: 50%;
-    opacity: 0;
-} */
 .our-work .work-item .item-info .cat {
   font-size: 2.5rem;
   font-family: var(--bs-font-sans-serif);
@@ -1036,8 +1025,8 @@ header .header-page .subtitle-page {
 }
 
 .L_shap-bottom {
-  transform: rotateY(8deg) rotateX(0deg) rotateZ(-6deg) skewY(6deg) skewX(-6deg)
-    translateX(35.5%) translateY(-10%) translateZ(-100px) !important;
+  transform: rotateY(14deg) rotateX(0deg) rotateZ(-6deg) skewY(6deg)
+    skewX(-6deg) translateX(39.5%) translateY(-10%) translateZ(-100px) !important;
 }
 
 .cube_L {
@@ -1304,11 +1293,19 @@ header .header-page .subtitle-page {
   top: auto;
 }
 
+.header-project.header_about .sub-about-title {
+  position: absolute;
+  left: 0%;
+  bottom: 35%;
+  top: auto;
+  white-space: nowrap;
+}
+
 .work_2.our-work .work-item {
   display: flex;
   align-items: center;
   padding: 0 120px;
-  gap: 50px;
+  gap: 20px 50px;
 }
 
 .work_2.our-work .img-next-box {
@@ -1316,19 +1313,6 @@ header .header-page .subtitle-page {
   height: 538px;
   box-shadow: 0 5px 32px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
-}
-
-@media only screen and (max-width: 767px) {
-  .work_2.our-work .work-item {
-    flex-direction: column;
-    padding: 0;
-  }
-
-  .work_2.our-work .img-next-box {
-    min-width: 300px;
-    max-width: 100%;
-    height: 538px;
-  }
 }
 
 .work_2.our-work .img-next-box {
@@ -1352,20 +1336,50 @@ header .header-page .subtitle-page {
   gap: 0 50px;
 }
 
+@media only screen and (max-width: 767px) {
+  .work_2.our-work .work-item {
+    flex-direction: column;
+    padding: 0;
+    background: black;
+  }
+
+  .work_2.our-work .img-next-box {
+    min-width: 300px;
+    max-width: 100%;
+    height: 538px;
+    box-shadow: none;
+  }
+
+  .header-project.header_about .sub-about-title {
+    left: 6%;
+    bottom: -35%;
+  }
+  .work_2.our-work .img-next-box::before {
+    display: none;
+  }
+  .work_2.our-work {
+    background: black;
+  }
+}
+
 @media only screen and (min-width: 1600px) {
   .work_2.our-work .item-info {
     max-width: 50%;
   }
 }
 
-.work_2.our-work .item-info p {
-  color: black !important;
+@media only screen and (min-width: 768px) {
+  .work_2.our-work .item-info p {
+    color: black !important;
+  }
 }
+
 .work_2.our-work .item-info h3 {
   color: #fe5e00 !important;
 }
 .work_2.our-work .work-item {
   min-width: 100vw;
+  padding-top: 20px;
 }
 
 .work_2.our-work .work-item .item-border {
@@ -1396,10 +1410,13 @@ header .header-page .subtitle-page {
 
 @media only screen and (max-width: 767px) {
   .header_our .title {
-    line-height: 6rem !important;
+    line-height: 5rem !important;
   }
   .header_our.header-project .description {
     margin-top: 35px;
+  }
+  .header_our {
+    max-height: 500px;
   }
 }
 
@@ -1420,7 +1437,7 @@ header .header-page .subtitle-page {
   height: 52px;
   position: absolute;
   background-color: var(--bs-primary);
-  top: 20px;
+  top: -40px;
   transform: translate(-50%);
   left: 50%;
   margin-left: 94%;
@@ -1733,14 +1750,17 @@ header .header-page .subtitle-page {
 
   .box {
     scale: 1.2;
-    transform: rotateY(-30deg) rotateX(-6deg) skewY(2deg) skewX(-2deg)
-      translateX(22%) translateY(-30%) translateZ(-50px);
+    /* transform: rotateY(-30deg) rotateX(-6deg) skewY(2deg) skewX(-2deg)
+      translateX(22%) translateY(-30%) translateZ(-50px); */
+
+    transform: rotateY(-3deg) rotateX(1deg) skewY(0deg) skewX(0deg)
+      translateX(23%) translateY(-27%) translateZ(-50px);
   }
 
   .L_shap {
     scale: 1.7;
-    transform: rotateY(-9deg) rotateX(0deg) rotateZ(-6deg) skewY(6deg)
-      skewX(-6deg) translateX(32%) translateY(-10%) translateZ(-100px);
+    transform: rotateY(-1deg) rotateX(0deg) rotateZ(-6deg) skewY(6deg)
+      skewX(-6deg) translateX(32%) translateY(-9%) translateZ(-100px);
   }
 
   .next-project {
@@ -1835,16 +1855,16 @@ header .header-page .subtitle-page {
   .box__face--front,
   .box__face--back {
     width: 600px;
-    height: 300px;
-    line-height: 300px;
+    height: 200px;
+    line-height: 200px;
   }
 
   .box__face--right,
   .box__face--left {
     width: 200px;
-    height: 300px;
+    height: 200px;
     left: 200px;
-    line-height: 300px;
+    line-height: 200px;
   }
 
   .box__face--top {
@@ -2015,9 +2035,8 @@ header .header-page .subtitle-page {
   }
 
   .work_2.our-work .img-next-box {
-    width: 70%;
+    width: 90%;
     height: 35vh;
-    /* top: 8rem; */
   }
 
   .work_2.our-work .item-info {
@@ -2049,12 +2068,16 @@ header .header-page .subtitle-page {
     font-size: 14px;
   }
 
+  .next-project .bg-title {
+    display: none;
+  }
+
   .hero.title,
   h2,
   h2.title,
   .section-p h2.title {
-    font-size: 5rem;
-    max-width: 94%;
+    font-size: 5.9rem;
+    max-width: 100%;
   }
 
   h4 {
@@ -2124,8 +2147,9 @@ header .header-page .subtitle-page {
   .header-project.header_about .info-group {
     position: absolute;
     left: auto;
-    bottom: auto;
+    bottom: -150px;
     top: auto;
+    max-width: 90%;
   }
 
   .belief.title .dsn-word-wrapper:last-child {
@@ -2176,13 +2200,14 @@ header .header-page .subtitle-page {
 
   p.lead,
   .lead p {
-    font-size: 1.675rem;
+    font-size: 1.8rem;
+    line-height: 1.4;
   }
 
   .container,
   .header-project .link-vist {
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .site-header .menu-icon .text-menu {
@@ -2280,7 +2305,7 @@ header .header-page .subtitle-page {
 
   .our.title .dsn-word-wrapper:last-child .dsn-chars-wrapper:last-child:after {
     scale: 0.25;
-    top: -8px;
+    top: -26px;
     left: -10%;
   }
 

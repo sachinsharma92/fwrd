@@ -1565,27 +1565,14 @@ function contactValidator() {
             u = new TimelineLite();
           function mediaSize() {
             /* Reset for CSS changes – Still need a better way to do this! */
-            o.length > 0 &&
-              u.to(o, 2, {
-                width: "100%",
-                height: "100%",
-                borderRadius: "0%",
-                border: "0",
-                borderLeft: "outset",
-                borderBottom: "outset",
-                top: "50%",
-                left: "50%",
-                x: "-50%",
-                y: "-50%",
-              }),
-              // Text 1 code here
-              t1.length > 0 &&
-                u.from(t1, 2, {
-                  duration: 1.5,
-                  yPercent: 0,
-                  ease: "power4.out",
-                  stagger: 0.1,
-                });
+            // Text 1 code here
+            t1.length > 0 &&
+              u.from(t1, 2, {
+                duration: 1.5,
+                yPercent: 0,
+                ease: "power4.out",
+                stagger: 0.1,
+              });
             u.to(t1, 2, {
               autoAlpha: 0,
               yPercent: -100,
@@ -1601,14 +1588,9 @@ function contactValidator() {
                 borderLeft: "outset",
                 borderBottom: "outset",
                 rotationX: "0",
-                rotationY: "2",
+                rotationY: "4",
                 skewX: "0",
-                skewY: "-2",
-                scale: "0.8",
-                x: window.matchMedia("(min-width: 1024px)").matches
-                  ? "10%"
-                  : "-30%",
-                y: "-15%",
+                skewY: "0",
               }),
               boxl.length > 0 &&
                 u.to(boxl, 2, {
@@ -1618,13 +1600,9 @@ function contactValidator() {
                   borderLeft: "outset",
                   borderBottom: "outset",
                   rotationX: "0",
-                  rotationY: "1",
+                  rotationY: "2",
                   skewX: "0",
                   skewY: "0",
-                  x: window.matchMedia("(min-width: 1024px)").matches
-                    ? "32%"
-                    : "10%",
-                  y: "-8%",
                 });
 
             // Text 2 code here
@@ -1650,15 +1628,10 @@ function contactValidator() {
                 border: "0",
                 borderLeft: "outset",
                 borderBottom: "outset",
-                rotationX: "6",
-                rotationY: "4",
+                rotationX: "0",
+                rotationY: "8",
                 skewX: "0",
-                skewY: "-2",
-                scale: "0.8",
-                x: window.matchMedia("(min-width: 1024px)").matches
-                  ? "10%"
-                  : "-30%",
-                y: "-15%",
+                skewY: "0",
               }),
               boxl.length > 0 &&
                 u.to(boxl, 2, {
@@ -1668,13 +1641,9 @@ function contactValidator() {
                   borderLeft: "outset",
                   borderBottom: "outset",
                   rotationX: "0",
-                  rotationY: "2",
+                  rotationY: "4",
                   skewX: "0",
                   skewY: "0",
-                  x: window.matchMedia("(min-width: 1024px)").matches
-                    ? "32%"
-                    : "10%",
-                  y: "-8%",
                 });
 
             // Text 3 code here
@@ -1700,15 +1669,10 @@ function contactValidator() {
                 border: "0",
                 borderLeft: "outset",
                 borderBottom: "outset",
-                rotationX: "6",
-                rotationY: "8",
+                rotationX: "0",
+                rotationY: "12",
                 skewX: "0",
-                skewY: "-2",
-                scale: "0.8",
-                x: window.matchMedia("(min-width: 1024px)").matches
-                  ? "10%"
-                  : "-30%",
-                y: "-15%",
+                skewY: "0",
               }),
               boxl.length > 0 &&
                 u.to(boxl, 2, {
@@ -1718,13 +1682,9 @@ function contactValidator() {
                   borderLeft: "outset",
                   borderBottom: "outset",
                   rotationX: "0",
-                  rotationY: "3",
+                  rotationY: "6",
                   skewX: "0",
                   skewY: "0",
-                  x: window.matchMedia("(min-width: 1024px)").matches
-                    ? "32%"
-                    : "10%",
-                  y: "-8%",
                 });
 
             // Text 4 code here
@@ -1749,15 +1709,10 @@ function contactValidator() {
                 border: "0",
                 borderLeft: "outset",
                 borderBottom: "outset",
-                rotationX: "6",
-                rotationY: "14",
+                rotationX: "0",
+                rotationY: "16",
                 skewX: "0",
-                skewY: "-2",
-                scale: "0.8",
-                x: window.matchMedia("(min-width: 1024px)").matches
-                  ? "10%"
-                  : "-30%",
-                y: "-15%",
+                skewY: "0",
               }),
               boxl.length > 0 &&
                 u.to(boxl, 2, {
@@ -1767,13 +1722,9 @@ function contactValidator() {
                   borderLeft: "outset",
                   borderBottom: "outset",
                   rotationX: "0",
-                  rotationY: "4",
+                  rotationY: "8",
                   skewX: "0",
                   skewY: "0",
-                  x: window.matchMedia("(min-width: 1024px)").matches
-                    ? "32%"
-                    : "10%",
-                  y: "-8%",
                 });
 
             // Text 5 code here
@@ -1798,15 +1749,10 @@ function contactValidator() {
                 border: "0",
                 borderLeft: "outset",
                 borderBottom: "outset",
-                rotationX: "6",
-                rotationY: "18",
+                rotationX: "0",
+                rotationY: "20",
                 skewX: "0",
-                skewY: "-2",
-                scale: "0.8",
-                x: window.matchMedia("(min-width: 1024px)").matches
-                  ? "10%"
-                  : "-30%",
-                y: "-15%",
+                skewY: "0",
               }),
               boxl.length > 0 &&
                 u.to(boxl, 2, {
@@ -1816,13 +1762,9 @@ function contactValidator() {
                   borderLeft: "outset",
                   borderBottom: "outset",
                   rotationX: "0",
-                  rotationY: "5",
+                  rotationY: "10",
                   skewX: "0",
                   skewY: "0",
-                  x: window.matchMedia("(min-width: 1024px)").matches
-                    ? "32%"
-                    : "10%",
-                  y: "-8%",
                 });
 
             // Text 6 code here
@@ -1847,15 +1789,10 @@ function contactValidator() {
                 border: "0",
                 borderLeft: "outset",
                 borderBottom: "outset",
-                rotationX: "6",
-                rotationY: "20",
+                rotationX: "0",
+                rotationY: "24",
                 skewX: "0",
-                skewY: "-2",
-                scale: "0.8",
-                x: window.matchMedia("(min-width: 1024px)").matches
-                  ? "10%"
-                  : "-30%",
-                y: "-15%",
+                skewY: "0",
               }),
               boxl.length > 0 &&
                 u.to(boxl, 2, {
@@ -1865,13 +1802,9 @@ function contactValidator() {
                   borderLeft: "outset",
                   borderBottom: "outset",
                   rotationX: "0",
-                  rotationY: "8",
+                  rotationY: "12",
                   skewX: "0",
                   skewY: "0",
-                  x: window.matchMedia("(min-width: 1024px)").matches
-                    ? "32%"
-                    : "10%",
-                  y: "-8%",
                 });
 
             // Text 7 code here
@@ -1895,15 +1828,9 @@ function contactValidator() {
                 border: "0",
                 borderLeft: "outset",
                 borderBottom: "outset",
-                rotationX: "6",
-                rotationY: "24",
-                skewX: "0",
-                skewY: "-2",
-                scale: "0.8",
-                x: window.matchMedia("(min-width: 1024px)").matches
-                  ? "10%"
-                  : "-30%",
-                y: "-15%",
+                rotationX: "0",
+                rotationY: "28",
+                skewY: "0",
               }),
               boxl.length > 0 &&
                 u.to(boxl, 2, {
@@ -1913,13 +1840,9 @@ function contactValidator() {
                   borderLeft: "outset",
                   borderBottom: "outset",
                   rotationX: "0",
-                  rotationY: "8",
+                  rotationY: "14",
                   skewX: "0",
                   skewY: "0",
-                  x: window.matchMedia("(min-width: 1024px)").matches
-                    ? "32%"
-                    : "10%",
-                  y: "-8%",
                 });
           }
 
@@ -2444,6 +2367,7 @@ function contactValidator() {
             return (i = null), !1;
           let o = e("#dsn-about-parallax-img"),
             s = e("#dsn-about-title"),
+            g = e("#dsn-about-subtitle"),
             a = e("#dsn-about-description"),
             w = e("#dsn-about-sm-title"),
             l = e("#dsn-about-desc-items"),
@@ -2522,6 +2446,19 @@ function contactValidator() {
                 0
               )
             ),
+            g.length &&
+              u.fromTo(
+                g,
+                0.8,
+                {
+                  y: "15%",
+                  autoAlpha: 0,
+                },
+                {
+                  y: "0%",
+                  autoAlpha: 1,
+                }
+              ),
             a.length &&
               u.fromTo(
                 a,
@@ -2593,7 +2530,7 @@ function contactValidator() {
               );
             }),
             f && n.push(f),
-            (i = c = c = u = f = o = r = l = a = w = s = null);
+            (i = c = c = u = f = o = r = l = g = a = w = s = null);
         },
         headerOurwork: function () {
           let i = '[data-dsn-header="ourwork"]';
@@ -2724,7 +2661,9 @@ function contactValidator() {
           let f = dsnGrid.tweenMaxParallax(d, t).addParrlax({
             id: i,
             triggerHook: 0,
-            duration: 4100,
+            duration: window.matchMedia("(min-width: 1024px)").matches
+              ? "300%"
+              : "100%",
             tween: u,
             _fixed: !0,
           });
@@ -3132,9 +3071,9 @@ function contactValidator() {
             s = o.find(".work-item");
           if (o.length) {
             let a = l.width() / 1;
-            dsnGrid.isMobile() && l.width() < 768 && l.width() >= 576
+            dsnGrid.isMobile() && l.width() < 0 && l.width() >= 576
               ? (a = l.width() / 1.5)
-              : dsnGrid.isMobile() && l.width() < 576 && (a = l.width() / 1.15),
+              : dsnGrid.isMobile() && l.width() < 0 && (a = l.width() / 1.15),
               s.each(function () {
                 e(this).css({
                   width: a,
@@ -3148,12 +3087,12 @@ function contactValidator() {
               id: i,
               triggerHook: 0,
               _fixed: !0,
-              duration: 350 * s.length,
+              duration: 600 * s.length,
               refreshParallax: !0,
               tween: TweenLite.to(o, 0.5, {
                 force3D: !0,
-                x: -1.1 * (s.last().offset().left - 0.2 * s.last().width()),
-                ease: Linear.easeNone,
+                x: -1.1 * (s.last().offset().left - 0.36 * s.last().width()),
+                ease: Quad.easeInOut,
               }),
             });
             r && n.push(r), (r = null);
@@ -3507,7 +3446,7 @@ function contactValidator() {
       const t = e(".site-header");
       return {
         lineActive: function () {
-          let e = t.find("ul.extend-container > li.dsn-active");
+          let e = t.find("ul.extend-container li.dsn-active");
           e.length && this.setLine(e.offset().left), (e = null);
         },
         lineMove: function () {
@@ -3727,7 +3666,7 @@ function contactValidator() {
         },
       };
     })().init(),
-      dsnGrid.removeWhiteSpace(".site-header ul.extend-container li > a"),
+      dsnGrid.removeWhiteSpace(".site-header ul.extend-container li a"),
       l.on("popstate", function (e) {
         if (window.location.hash.length)
           return (

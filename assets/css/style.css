@@ -1727,8 +1727,8 @@ a.link-hover:hover {
 @media only screen and (max-width: 767px) {
   .container,
   .header-project .link-vist {
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
@@ -5371,7 +5371,7 @@ a:hover {
 
 @media only screen and (max-width: 767px) {
   .our-work .work-item .item-info {
-    padding: 30px 15px;
+    padding: 0px 15px;
   }
 }
 
@@ -5426,16 +5426,6 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* .our-work .work-item:hover .item-info {
-  -webkit-transform: translate(0, -50px);
-  -ms-transform: translate(0, -50px);
-  transform: translate(0, -50px);
-} */
-
-/* .our-work .work-item:hover .item-info h4 {
-  margin-bottom: 10px;
-} */
-
 .our-work .work-item:hover .item-info span {
   opacity: 1;
 }
@@ -5457,6 +5447,11 @@ a:hover {
 @media only screen and (max-width: 767px) {
   .work-masonry .filterings-t .filtering-wrap {
     width: 100%;
+  }
+
+  .our-work .work-item .item-info span {
+    opacity: 1;
+    color: white;
   }
 }
 
