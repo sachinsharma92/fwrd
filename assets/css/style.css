@@ -3360,6 +3360,10 @@ a:hover {
     display: none;
   }
 
+  .dsn-back-menu {
+    display: none !important;
+  }
+
   .classic-menu
     .site-header
     .extend-container

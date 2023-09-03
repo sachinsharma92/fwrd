@@ -1591,6 +1591,9 @@ function contactValidator() {
                 rotationY: "5",
                 skewX: "0",
                 skewY: "0",
+                top: window.matchMedia("(min-width: 1700px)").matches
+                  ? "-13%"
+                  : "5%",
               }),
               boxl.length > 0 &&
                 u.to(boxl, 2, {
@@ -1632,6 +1635,9 @@ function contactValidator() {
                 rotationY: "10",
                 skewX: "0",
                 skewY: "0",
+                top: window.matchMedia("(min-width: 1700px)").matches
+                  ? "-13%"
+                  : "5%",
               }),
               boxl.length > 0 &&
                 u.to(boxl, 2, {
@@ -1673,6 +1679,9 @@ function contactValidator() {
                 rotationY: "15",
                 skewX: "0",
                 skewY: "0",
+                top: window.matchMedia("(min-width: 1700px)").matches
+                  ? "-13%"
+                  : "5%",
               }),
               boxl.length > 0 &&
                 u.to(boxl, 2, {
@@ -1713,6 +1722,9 @@ function contactValidator() {
                 rotationY: "20",
                 skewX: "0",
                 skewY: "0",
+                top: window.matchMedia("(min-width: 1700px)").matches
+                  ? "-13%"
+                  : "5%",
               }),
               boxl.length > 0 &&
                 u.to(boxl, 2, {
@@ -1753,6 +1765,9 @@ function contactValidator() {
                 rotationY: "25",
                 skewX: "0",
                 skewY: "0",
+                top: window.matchMedia("(min-width: 1700px)").matches
+                  ? "-13%"
+                  : "5%",
               }),
               boxl.length > 0 &&
                 u.to(boxl, 2, {
@@ -1793,6 +1808,9 @@ function contactValidator() {
                 rotationY: "30",
                 skewX: "0",
                 skewY: "0",
+                top: window.matchMedia("(min-width: 1700px)").matches
+                  ? "-13%"
+                  : "5%",
               }),
               boxl.length > 0 &&
                 u.to(boxl, 2, {
@@ -1830,7 +1848,11 @@ function contactValidator() {
                 borderBottom: "outset",
                 rotationX: "0",
                 rotationY: "35",
+                skewX: "0",
                 skewY: "0",
+                top: window.matchMedia("(min-width: 1700px)").matches
+                  ? "-13%"
+                  : "5%",
               }),
               boxl.length > 0 &&
                 u.to(boxl, 2, {
@@ -2269,9 +2291,9 @@ function contactValidator() {
                 }
               ),
               u.to(s, 0.8, {
-                y: window.matchMedia("(max-width: 1500px)").matches
-                  ? "210%"
-                  : "270%",
+                y: window.matchMedia("(min-width: 1900px)").matches
+                  ? "290%"
+                  : "240%",
               });
           } else {
             s.length &&
@@ -3467,19 +3489,6 @@ function contactValidator() {
               n.lineActive();
             });
         },
-        setLine: function (t, n = 65, i = 25, o) {
-          TweenMax.to(".nav-border-bottom", 0.3, {
-            left: t,
-            top: n,
-            width: i,
-            onComplete: function () {
-              e(".nav-border-bottom").css({
-                left: o || t,
-                width: 25,
-              });
-            },
-          });
-        },
         cutterText: function () {
           let e = t.find(".menu-icon .text-menu");
           if (e.length <= 0) return;
@@ -3500,6 +3509,7 @@ function contactValidator() {
           let o = new TimelineMax({
             paused: !0,
             onReverseComplete: function () {
+              console.log("check onReverseComplete");
               setTimeout(function () {
                 n
                   .find(".icon-top , .icon-bottom")
@@ -3583,7 +3593,7 @@ function contactValidator() {
               },
               0.1
             ),
-            o.to(i.find("ul.extend-container > li > a .dsn-meta-menu"), 0.5, {
+            o.to(i.find("ul.extend-container > li > a"), 0.5, {
               autoAlpha: 1,
               ease: a,
             }),
@@ -3596,55 +3606,56 @@ function contactValidator() {
               "-=1"
             ),
             o.reverse(),
-            i
-              .find("ul.extend-container > li.dsn-drop-down")
-              .on("click", function (t) {
-                t.stopPropagation(),
-                  s._totalDuration > 0 ||
-                    ((s = new TimelineMax({
-                      onReverseComplete: function () {
-                        s = new TimelineMax();
-                      },
-                    })).set(e(this).find("ul"), {
-                      display: "flex",
-                    }),
-                    s.staggerTo(
-                      i.find("ul.extend-container > li > a .dsn-title-menu"),
-                      0.5,
-                      {
-                        y: -30,
-                        autoAlpha: 0,
-                        ease: Back.easeIn.config(1),
-                      },
-                      0.1
-                    ),
-                    s.to(
-                      i.find("ul.extend-container > li > a .dsn-meta-menu"),
-                      0.5,
-                      {
-                        autoAlpha: 0,
-                      },
-                      0.5
-                    ),
-                    s.staggerFromTo(
-                      e(this).find("ul li"),
-                      0.5,
-                      {
-                        x: 50,
-                        autoAlpha: 0,
-                      },
-                      {
-                        x: 0,
-                        autoAlpha: 1,
-                        ease: Back.easeOut.config(1),
-                      },
-                      0.1
-                    ));
-              }),
+            i.find("ul.extend-container > li a").on("click", function (t) {
+              t.stopPropagation(),
+                s._totalDuration > 0 ||
+                  ((s = new TimelineMax({
+                    onReverseComplete: function () {
+                      s = new TimelineMax();
+                    },
+                  })).set(e(this).find("ul"), {
+                    display: "flex",
+                  }),
+                  s.staggerTo(
+                    i.find("ul.extend-container > li > a .dsn-title-menu"),
+                    0.5,
+                    {
+                      y: -30,
+                      autoAlpha: 0,
+                      ease: Back.easeIn.config(1),
+                    },
+                    0.1
+                  ),
+                  s.to(
+                    i.find("ul.extend-container > li > a"),
+                    0.5,
+                    {
+                      autoAlpha: 0,
+                    },
+                    0.5
+                  ),
+                  s.staggerFromTo(
+                    e(this).find("ul li"),
+                    0.5,
+                    {
+                      x: 50,
+                      autoAlpha: 0,
+                    },
+                    {
+                      x: 0,
+                      autoAlpha: 1,
+                      ease: Back.easeOut.config(1),
+                    },
+                    0.1
+                  ));
+            }),
             n.off("click"),
             n.on("click", function () {
               s.reverse(-1), o.reversed(!o.reversed()), (s = new TimelineMax());
             });
+          i.find("ul.extend-container > li > a").on("click", function () {
+            s.reverse(-1), o.reversed(!o.reversed()), (s = new TimelineMax());
+          });
           let l = e(".dsn-back-menu");
           l.off("click"),
             l.on("click", function () {
@@ -3656,7 +3667,7 @@ function contactValidator() {
           if (!t.length) return;
           let e = this;
           this.cutterText(),
-            l.width() > 991 &&
+            l.width() > 768 &&
               r.hasClass("classic-menu") &&
               (t.find("ul.extend-container > li").off("mouseenter"),
               t.find("ul.extend-container").off("mouseleave"),
