@@ -2233,16 +2233,17 @@ header .header-page .subtitle-page {
 
   .box {
     height: 100%;
+    width: 100%;
     top: 15%;
     scale: 0.35;
-    transform: rotateY(-12deg) rotateX(2deg) skewY(-1deg) skewX(0deg)
-      translateX(-56%) translateY(-40%) translateZ(-50px);
+    transform: rotateY(-16deg) rotateX(2deg) skewY(0deg) skewX(0deg)
+      translateX(-16%) translateY(-40%) translateZ(-50px);
   }
 
   .L_shap {
     top: -68%;
     scale: 0.6;
-    transform: rotateY(-8deg) rotateX(-10deg) rotateZ(-5deg) skewY(6deg)
+    transform: rotateY(-8deg) rotateX(-9deg) rotateZ(-5deg) skewY(7deg)
       skewX(-7deg) translateX(-25%) translateY(14%) translateZ(0);
   }
 
@@ -2457,6 +2458,10 @@ header .header-page .subtitle-page {
 @media (max-width: 767px) {
   .hide-mobile {
     display: none;
+  }
+
+  .fwrd-text-style .description h1 {
+    font-size: 2.5rem;
   }
 }
 

@@ -1564,213 +1564,113 @@ function contactValidator() {
             c = e(i).find(".scroll-d img"),
             u = new TimelineLite();
           function mediaSize() {
-            /* Reset for CSS changes – Still need a better way to do this! */
-            // Text 1 code here
-            t1.length > 0 &&
-              u.from(t1, 2, {
-                duration: 1.5,
-                yPercent: 0,
+            if (window.matchMedia("(max-width: 767px)").matches) {
+              /* Reset for CSS changes – Still need a better way to do this! */
+              // Text 1 code here
+              t1.length > 0 &&
+                u.from(t1, 2, {
+                  duration: 1.5,
+                  yPercent: 0,
+                  ease: "power4.out",
+                  stagger: 0.1,
+                });
+              u.to(t1, 2, {
+                autoAlpha: 0,
+                yPercent: -100,
+                delay: 2,
                 ease: "power4.out",
                 stagger: 0.1,
               });
-            u.to(t1, 2, {
-              autoAlpha: 0,
-              yPercent: -100,
-              delay: 2,
-              ease: "power4.out",
-              stagger: 0.1,
-            });
-            box.length > 0 &&
-              u.to(box, 2, {
-                width: "100%",
-                height: "100%",
-                border: "0",
-                borderLeft: "outset",
-                borderBottom: "outset",
-                rotationX: "0",
-                rotationY: "5",
-                skewX: "0",
-                skewY: "0",
-                top: window.matchMedia("(min-width: 1700px)").matches
-                  ? "-13%"
-                  : "5%",
-              }),
-              boxl.length > 0 &&
-                u.to(boxl, 2, {
+              box.length > 0 &&
+                u.to(box, 2, {
                   width: "100%",
                   height: "100%",
                   border: "0",
                   borderLeft: "outset",
                   borderBottom: "outset",
                   rotationX: "0",
-                  rotationY: "3",
+                  rotationY: "5",
                   skewX: "0",
                   skewY: "0",
-                });
+                }),
+                boxl.length > 0 &&
+                  u.to(boxl, 2, {
+                    width: "100%",
+                    height: "100%",
+                    border: "0",
+                    borderLeft: "outset",
+                    borderBottom: "outset",
+                    rotationX: "-10",
+                    rotationY: "3",
+                    rotationZ: "0",
+                    x: "-10%",
+                    y: "10%",
+                    skewX: "0",
+                    skewY: "0",
+                  });
 
-            // Text 2 code here
-            t2.length > 0 &&
-              u.from(t2, 2, {
-                duration: 1.5,
-                yPercent: 100,
+              // Text 2 code here
+              t2.length > 0 &&
+                u.from(t2, 2, {
+                  duration: 1.5,
+                  yPercent: 100,
+                  ease: "power4.out",
+                  stagger: 0.1,
+                });
+              u.to(t2, 2, {
+                autoAlpha: 0,
+                delay: 2,
+                yPercent: -100,
                 ease: "power4.out",
                 stagger: 0.1,
               });
-            u.to(t2, 2, {
-              autoAlpha: 0,
-              delay: 2,
-              yPercent: -100,
-              ease: "power4.out",
-              stagger: 0.1,
-            });
 
-            box.length > 0 &&
-              u.to(box, 2, {
-                width: "100%",
-                height: "100%",
-                border: "0",
-                borderLeft: "outset",
-                borderBottom: "outset",
-                rotationX: "0",
-                rotationY: "10",
-                skewX: "0",
-                skewY: "0",
-                top: window.matchMedia("(min-width: 1700px)").matches
-                  ? "-13%"
-                  : "5%",
-              }),
-              boxl.length > 0 &&
-                u.to(boxl, 2, {
+              box.length > 0 &&
+                u.to(box, 2, {
                   width: "100%",
                   height: "100%",
                   border: "0",
                   borderLeft: "outset",
                   borderBottom: "outset",
                   rotationX: "0",
-                  rotationY: "6",
+                  rotationY: "10",
                   skewX: "0",
                   skewY: "0",
-                });
+                }),
+                boxl.length > 0 &&
+                  u.to(boxl, 2, {
+                    width: "100%",
+                    height: "100%",
+                    border: "0",
+                    borderLeft: "outset",
+                    borderBottom: "outset",
+                    rotationX: "-10",
+                    rotationY: "6",
+                    rotationZ: "0",
+                    x: "-10%",
+                    y: "10%",
+                    skewX: "0",
+                    skewY: "0",
+                  });
 
-            // Text 3 code here
-            t3.length > 0 &&
-              u.from(t3, 2, {
-                duration: 1.5,
-                yPercent: 100,
+              // Text 3 code here
+              t3.length > 0 &&
+                u.from(t3, 2, {
+                  duration: 1.5,
+                  yPercent: 100,
+                  ease: "power4.out",
+                  stagger: 0.1,
+                });
+              u.to(t3, 2, {
+                autoAlpha: 0,
+                yPercent: -100,
+                delay: 2,
                 ease: "power4.out",
                 stagger: 0.1,
               });
-            u.to(t3, 2, {
-              autoAlpha: 0,
-              yPercent: -100,
-              delay: 2,
-              ease: "power4.out",
-              stagger: 0.1,
-            });
 
-            box.length > 0 &&
-              u.to(box, 2, {
-                width: "100%",
-                height: "100%",
-                border: "0",
-                borderLeft: "outset",
-                borderBottom: "outset",
-                rotationX: "0",
-                rotationY: "15",
-                skewX: "0",
-                skewY: "0",
-                top: window.matchMedia("(min-width: 1700px)").matches
-                  ? "-13%"
-                  : "5%",
-              }),
-              boxl.length > 0 &&
-                u.to(boxl, 2, {
-                  width: "100%",
-                  height: "100%",
-                  border: "0",
-                  borderLeft: "outset",
-                  borderBottom: "outset",
-                  rotationX: "0",
-                  rotationY: "9",
-                  skewX: "0",
-                  skewY: "0",
-                });
-
-            // Text 4 code here
-            t4.length > 0 &&
-              u.from(t4, 2, {
-                duration: 1.5,
-                yPercent: 100,
-                ease: "power4.out",
-                stagger: 0.1,
-              });
-            u.to(t4, 2, {
-              autoAlpha: 0,
-              yPercent: -100,
-              delay: 2,
-              ease: "power4.out",
-            });
-
-            box.length > 0 &&
-              u.to(box, 2, {
-                width: "100%",
-                height: "100%",
-                border: "0",
-                borderLeft: "outset",
-                borderBottom: "outset",
-                rotationX: "0",
-                rotationY: "20",
-                skewX: "0",
-                skewY: "0",
-                top: window.matchMedia("(min-width: 1700px)").matches
-                  ? "-13%"
-                  : "5%",
-              }),
-              boxl.length > 0 &&
-                u.to(boxl, 2, {
-                  width: "100%",
-                  height: "100%",
-                  border: "0",
-                  borderLeft: "outset",
-                  borderBottom: "outset",
-                  rotationX: "0",
-                  rotationY: "12",
-                  skewX: "0",
-                  skewY: "0",
-                });
-
-            // Text 5 code here
-            t5.length > 0 &&
-              u.from(t5, 2, {
-                duration: 1.5,
-                yPercent: 100,
-                ease: "power4.out",
-                stagger: 0.1,
-              });
-            u.to(t5, 2, {
-              autoAlpha: 0,
-              yPercent: -100,
-              delay: 2,
-              ease: "power4.out",
-            });
-
-            box.length > 0 &&
-              u.to(box, 2, {
-                width: "100%",
-                height: "100%",
-                border: "0",
-                borderLeft: "outset",
-                borderBottom: "outset",
-                rotationX: "0",
-                rotationY: "25",
-                skewX: "0",
-                skewY: "0",
-                top: window.matchMedia("(min-width: 1700px)").matches
-                  ? "-13%"
-                  : "5%",
-              }),
-              boxl.length > 0 &&
-                u.to(boxl, 2, {
+              box.length > 0 &&
+                u.to(box, 2, {
                   width: "100%",
                   height: "100%",
                   border: "0",
@@ -1780,92 +1680,496 @@ function contactValidator() {
                   rotationY: "15",
                   skewX: "0",
                   skewY: "0",
+                }),
+                boxl.length > 0 &&
+                  u.to(boxl, 2, {
+                    width: "100%",
+                    height: "100%",
+                    border: "0",
+                    borderLeft: "outset",
+                    borderBottom: "outset",
+                    rotationX: "-10",
+                    rotationY: "9",
+                    rotationZ: "-1",
+                    x: "-10%",
+                    y: "10%",
+                    skewX: "0",
+                    skewY: "0",
+                  });
+
+              // Text 4 code here
+              t4.length > 0 &&
+                u.from(t4, 2, {
+                  duration: 1.5,
+                  yPercent: 100,
+                  ease: "power4.out",
+                  stagger: 0.1,
                 });
-
-            // Text 6 code here
-            t6.length > 0 &&
-              u.from(t6, 2, {
-                duration: 1.5,
-                yPercent: 100,
+              u.to(t4, 2, {
+                autoAlpha: 0,
+                yPercent: -100,
+                delay: 2,
                 ease: "power4.out",
-                stagger: 0.1,
               });
-            u.to(t6, 2, {
-              autoAlpha: 0,
-              yPercent: -100,
-              delay: 2,
-              ease: "power4.out",
-            });
 
-            box.length > 0 &&
-              u.to(box, 2, {
-                width: "100%",
-                height: "100%",
-                border: "0",
-                borderLeft: "outset",
-                borderBottom: "outset",
-                rotationX: "0",
-                rotationY: "30",
-                skewX: "0",
-                skewY: "0",
-                top: window.matchMedia("(min-width: 1700px)").matches
-                  ? "-13%"
-                  : "5%",
-              }),
-              boxl.length > 0 &&
-                u.to(boxl, 2, {
+              box.length > 0 &&
+                u.to(box, 2, {
                   width: "100%",
                   height: "100%",
                   border: "0",
                   borderLeft: "outset",
                   borderBottom: "outset",
                   rotationX: "0",
-                  rotationY: "21.5",
+                  rotationY: "20",
                   skewX: "0",
                   skewY: "0",
+                }),
+                boxl.length > 0 &&
+                  u.to(boxl, 2, {
+                    width: "100%",
+                    height: "100%",
+                    border: "0",
+                    borderLeft: "outset",
+                    borderBottom: "outset",
+                    rotationX: "-10",
+                    rotationY: "12",
+                    rotationZ: "-2",
+                    x: "-10%",
+                    y: "10%",
+                    skewX: "0",
+                    skewY: "0",
+                  });
+
+              // Text 5 code here
+              t5.length > 0 &&
+                u.from(t5, 2, {
+                  duration: 1.5,
+                  yPercent: 100,
+                  ease: "power4.out",
+                  stagger: 0.1,
                 });
-
-            // Text 7 code here
-            t7.length > 0 &&
-              u.from(t7, 2, {
-                duration: 1.5,
-                yPercent: 100,
+              u.to(t5, 2, {
+                autoAlpha: 0,
+                yPercent: -100,
+                delay: 2,
                 ease: "power4.out",
-                stagger: 0.1,
               });
-            u.to(t7, 2, {
-              yPercent: 0,
-              delay: 2,
-              ease: "power4.out",
-            });
 
-            box.length > 0 &&
-              u.to(box, 2, {
-                width: "100%",
-                height: "100%",
-                border: "0",
-                borderLeft: "outset",
-                borderBottom: "outset",
-                rotationX: "0",
-                rotationY: "35",
-                skewX: "0",
-                skewY: "0",
-                top: window.matchMedia("(min-width: 1700px)").matches
-                  ? "-13%"
-                  : "5%",
-              }),
-              boxl.length > 0 &&
-                u.to(boxl, 2, {
+              box.length > 0 &&
+                u.to(box, 2, {
                   width: "100%",
                   height: "100%",
                   border: "0",
                   borderLeft: "outset",
                   borderBottom: "outset",
                   rotationX: "0",
-                  rotationY: "21.5",
+                  rotationY: "25",
                   skewX: "0",
                   skewY: "0",
+                }),
+                boxl.length > 0 &&
+                  u.to(boxl, 2, {
+                    width: "100%",
+                    height: "100%",
+                    border: "0",
+                    borderLeft: "outset",
+                    borderBottom: "outset",
+                    rotationX: "-10",
+                    rotationY: "15",
+                    rotationZ: "-3",
+                    x: "-10%",
+                    y: "10%",
+                    skewX: "0",
+                    skewY: "0",
+                  });
+
+              // Text 6 code here
+              t6.length > 0 &&
+                u.from(t6, 2, {
+                  duration: 1.5,
+                  yPercent: 100,
+                  ease: "power4.out",
+                  stagger: 0.1,
                 });
+              u.to(t6, 2, {
+                autoAlpha: 0,
+                yPercent: -100,
+                delay: 2,
+                ease: "power4.out",
+              });
+
+              box.length > 0 &&
+                u.to(box, 2, {
+                  width: "100%",
+                  height: "100%",
+                  border: "0",
+                  borderLeft: "outset",
+                  borderBottom: "outset",
+                  rotationX: "0",
+                  rotationY: "30",
+                  skewX: "0",
+                  skewY: "0",
+                }),
+                boxl.length > 0 &&
+                  u.to(boxl, 2, {
+                    width: "100%",
+                    height: "100%",
+                    border: "0",
+                    borderLeft: "outset",
+                    borderBottom: "outset",
+                    rotationX: "-10",
+                    rotationY: "21.5",
+                    rotationZ: "-3",
+                    x: "-10%",
+                    y: "10%",
+                    skewX: "0",
+                    skewY: "0",
+                  });
+
+              // Text 7 code here
+              t7.length > 0 &&
+                u.from(t7, 2, {
+                  duration: 1.5,
+                  yPercent: 100,
+                  ease: "power4.out",
+                  stagger: 0.1,
+                });
+              u.to(t7, 2, {
+                yPercent: 0,
+                delay: 2,
+                ease: "power4.out",
+              });
+
+              box.length > 0 &&
+                u.to(box, 2, {
+                  width: "100%",
+                  height: "100%",
+                  border: "0",
+                  borderLeft: "outset",
+                  borderBottom: "outset",
+                  rotationX: "0",
+                  rotationY: "35",
+                  skewX: "0",
+                  skewY: "0",
+                }),
+                boxl.length > 0 &&
+                  u.to(boxl, 2, {
+                    width: "100%",
+                    height: "100%",
+                    border: "0",
+                    borderLeft: "outset",
+                    borderBottom: "outset",
+                    rotationX: "-10",
+                    rotationY: "21.5",
+                    rotationZ: "-3",
+                    x: "-10%",
+                    y: "10%",
+                    skewX: "0",
+                    skewY: "0",
+                  });
+            } else {
+              // Text 1 code here
+              t1.length > 0 &&
+                u.from(t1, 2, {
+                  duration: 1.5,
+                  yPercent: 0,
+                  ease: "power4.out",
+                  stagger: 0.1,
+                });
+              u.to(t1, 2, {
+                autoAlpha: 0,
+                yPercent: -100,
+                delay: 2,
+                ease: "power4.out",
+                stagger: 0.1,
+              });
+              box.length > 0 &&
+                u.to(box, 2, {
+                  width: "100%",
+                  height: "100%",
+                  border: "0",
+                  borderLeft: "outset",
+                  borderBottom: "outset",
+                  rotationX: "0",
+                  rotationY: "5",
+                  skewX: "0",
+                  skewY: "0",
+                  top: window.matchMedia("(min-width: 1700px)").matches
+                    ? "-13%"
+                    : "5%",
+                }),
+                boxl.length > 0 &&
+                  u.to(boxl, 2, {
+                    width: "100%",
+                    height: "100%",
+                    border: "0",
+                    borderLeft: "outset",
+                    borderBottom: "outset",
+                    rotationX: "0",
+                    rotationY: "3",
+                    skewX: "0",
+                    skewY: "0",
+                  });
+
+              // Text 2 code here
+              t2.length > 0 &&
+                u.from(t2, 2, {
+                  duration: 1.5,
+                  yPercent: 100,
+                  ease: "power4.out",
+                  stagger: 0.1,
+                });
+              u.to(t2, 2, {
+                autoAlpha: 0,
+                delay: 2,
+                yPercent: -100,
+                ease: "power4.out",
+                stagger: 0.1,
+              });
+
+              box.length > 0 &&
+                u.to(box, 2, {
+                  width: "100%",
+                  height: "100%",
+                  border: "0",
+                  borderLeft: "outset",
+                  borderBottom: "outset",
+                  rotationX: "0",
+                  rotationY: "10",
+                  skewX: "0",
+                  skewY: "0",
+                  top: window.matchMedia("(min-width: 1700px)").matches
+                    ? "-13%"
+                    : "5%",
+                }),
+                boxl.length > 0 &&
+                  u.to(boxl, 2, {
+                    width: "100%",
+                    height: "100%",
+                    border: "0",
+                    borderLeft: "outset",
+                    borderBottom: "outset",
+                    rotationX: "0",
+                    rotationY: "6",
+                    skewX: "0",
+                    skewY: "0",
+                  });
+
+              // Text 3 code here
+              t3.length > 0 &&
+                u.from(t3, 2, {
+                  duration: 1.5,
+                  yPercent: 100,
+                  ease: "power4.out",
+                  stagger: 0.1,
+                });
+              u.to(t3, 2, {
+                autoAlpha: 0,
+                yPercent: -100,
+                delay: 2,
+                ease: "power4.out",
+                stagger: 0.1,
+              });
+
+              box.length > 0 &&
+                u.to(box, 2, {
+                  width: "100%",
+                  height: "100%",
+                  border: "0",
+                  borderLeft: "outset",
+                  borderBottom: "outset",
+                  rotationX: "0",
+                  rotationY: "15",
+                  skewX: "0",
+                  skewY: "0",
+                  top: window.matchMedia("(min-width: 1700px)").matches
+                    ? "-13%"
+                    : "5%",
+                }),
+                boxl.length > 0 &&
+                  u.to(boxl, 2, {
+                    width: "100%",
+                    height: "100%",
+                    border: "0",
+                    borderLeft: "outset",
+                    borderBottom: "outset",
+                    rotationX: "0",
+                    rotationY: "9",
+                    skewX: "0",
+                    skewY: "0",
+                  });
+
+              // Text 4 code here
+              t4.length > 0 &&
+                u.from(t4, 2, {
+                  duration: 1.5,
+                  yPercent: 100,
+                  ease: "power4.out",
+                  stagger: 0.1,
+                });
+              u.to(t4, 2, {
+                autoAlpha: 0,
+                yPercent: -100,
+                delay: 2,
+                ease: "power4.out",
+              });
+
+              box.length > 0 &&
+                u.to(box, 2, {
+                  width: "100%",
+                  height: "100%",
+                  border: "0",
+                  borderLeft: "outset",
+                  borderBottom: "outset",
+                  rotationX: "0",
+                  rotationY: "20",
+                  skewX: "0",
+                  skewY: "0",
+                  top: window.matchMedia("(min-width: 1700px)").matches
+                    ? "-13%"
+                    : "5%",
+                }),
+                boxl.length > 0 &&
+                  u.to(boxl, 2, {
+                    width: "100%",
+                    height: "100%",
+                    border: "0",
+                    borderLeft: "outset",
+                    borderBottom: "outset",
+                    rotationX: "0",
+                    rotationY: "12",
+                    skewX: "0",
+                    skewY: "0",
+                  });
+
+              // Text 5 code here
+              t5.length > 0 &&
+                u.from(t5, 2, {
+                  duration: 1.5,
+                  yPercent: 100,
+                  ease: "power4.out",
+                  stagger: 0.1,
+                });
+              u.to(t5, 2, {
+                autoAlpha: 0,
+                yPercent: -100,
+                delay: 2,
+                ease: "power4.out",
+              });
+
+              box.length > 0 &&
+                u.to(box, 2, {
+                  width: "100%",
+                  height: "100%",
+                  border: "0",
+                  borderLeft: "outset",
+                  borderBottom: "outset",
+                  rotationX: "0",
+                  rotationY: "25",
+                  skewX: "0",
+                  skewY: "0",
+                  top: window.matchMedia("(min-width: 1700px)").matches
+                    ? "-13%"
+                    : "5%",
+                }),
+                boxl.length > 0 &&
+                  u.to(boxl, 2, {
+                    width: "100%",
+                    height: "100%",
+                    border: "0",
+                    borderLeft: "outset",
+                    borderBottom: "outset",
+                    rotationX: "0",
+                    rotationY: "15",
+                    skewX: "0",
+                    skewY: "0",
+                  });
+
+              // Text 6 code here
+              t6.length > 0 &&
+                u.from(t6, 2, {
+                  duration: 1.5,
+                  yPercent: 100,
+                  ease: "power4.out",
+                  stagger: 0.1,
+                });
+              u.to(t6, 2, {
+                autoAlpha: 0,
+                yPercent: -100,
+                delay: 2,
+                ease: "power4.out",
+              });
+
+              box.length > 0 &&
+                u.to(box, 2, {
+                  width: "100%",
+                  height: "100%",
+                  border: "0",
+                  borderLeft: "outset",
+                  borderBottom: "outset",
+                  rotationX: "0",
+                  rotationY: "30",
+                  skewX: "0",
+                  skewY: "0",
+                  top: window.matchMedia("(min-width: 1700px)").matches
+                    ? "-13%"
+                    : "5%",
+                }),
+                boxl.length > 0 &&
+                  u.to(boxl, 2, {
+                    width: "100%",
+                    height: "100%",
+                    border: "0",
+                    borderLeft: "outset",
+                    borderBottom: "outset",
+                    rotationX: "0",
+                    rotationY: "21.5",
+                    skewX: "0",
+                    skewY: "0",
+                  });
+
+              // Text 7 code here
+              t7.length > 0 &&
+                u.from(t7, 2, {
+                  duration: 1.5,
+                  yPercent: 100,
+                  ease: "power4.out",
+                  stagger: 0.1,
+                });
+              u.to(t7, 2, {
+                yPercent: 0,
+                delay: 2,
+                ease: "power4.out",
+              });
+
+              box.length > 0 &&
+                u.to(box, 2, {
+                  width: "100%",
+                  height: "100%",
+                  border: "0",
+                  borderLeft: "outset",
+                  borderBottom: "outset",
+                  rotationX: "0",
+                  rotationY: "35",
+                  skewX: "0",
+                  skewY: "0",
+                  top: window.matchMedia("(min-width: 1700px)").matches
+                    ? "-13%"
+                    : "5%",
+                }),
+                boxl.length > 0 &&
+                  u.to(boxl, 2, {
+                    width: "100%",
+                    height: "100%",
+                    border: "0",
+                    borderLeft: "outset",
+                    borderBottom: "outset",
+                    rotationX: "0",
+                    rotationY: "21.5",
+                    skewX: "0",
+                    skewY: "0",
+                  });
+            }
           }
 
           /* Call the function */
