@@ -494,7 +494,7 @@ header .header-page .subtitle-page {
   margin-top: -22%;
   max-width: 680px;
   width: 100%;
-  left: 42%;
+  left: 44%;
   text-align: left;
 }
 
@@ -518,7 +518,7 @@ header .header-page .subtitle-page {
 }
 
 .home-product.header-project .intro-project-details {
-  left: 42%;
+  left: 44%;
   max-width: 605px;
   padding: 5px;
 }
@@ -530,7 +530,7 @@ header .header-page .subtitle-page {
   color: inherit;
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1700px) {
   #dsn-pigmentation-description.description {
     left: 46%;
   }
@@ -1014,24 +1014,29 @@ header .header-page .subtitle-page {
   scale: 2;
   transform-style: preserve-3d;
   transform: rotateY(-1deg) rotateX(0deg) rotateZ(-6deg) skewY(6deg)
-    skewX(-6deg) translateX(32%) translateY(-9%) translateZ(-100px);
+    skewX(-6deg) translateX(32%) translateY(0%) translateZ(-100px);
   transition: transform 1s;
 }
 
 .L_shap-bottom {
   transform: rotateY(21.4deg) rotateX(0deg) rotateZ(-6deg) skewY(4deg)
-    skewX(-6deg) translateX(43.7%) translateY(-13%) translateZ(-93px);
+    skewX(-6deg) translateX(43.7%) translateY(-3%) translateZ(-93px);
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1700px) {
   .L_shap {
     top: 15rem;
   }
-  .L_shap-bottom {
+  .L_shap {
+    transform: rotateY(-1deg) rotateX(0deg) rotateZ(-6deg) skewY(6deg)
+      skewX(-6deg) translateX(32%) translateY(-10%) translateZ(-100px);
+  }
+  .L_shap.L_shap-bottom {
     transform: rotateY(21.7deg) rotateX(0deg) rotateZ(-6deg) skewY(5deg)
-      skewX(-6deg) translateX(43.7%) translateY(-11%) translateZ(-89px);
+      skewX(-6deg) translateX(43.7%) translateY(-10%) translateZ(-89px);
   }
 }
+
 .cube_L {
   position: relative;
   top: 0%;
@@ -1739,7 +1744,7 @@ header .header-page .subtitle-page {
 /* * Resposive media query */
 @media (max-width: 1900px) {
   .box {
-    scale: 1.5;
+    scale: 1.3;
     transform: rotateY(-3deg) rotateX(1deg) skewY(0deg) skewX(0deg)
       translateX(23%) translateY(-27%) translateZ(-50px);
   }
@@ -2462,12 +2467,6 @@ header .header-page .subtitle-page {
 
   .fwrd-text-style .description h1 {
     font-size: 2.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .hide-desktop {
-    display: none;
   }
 }
 

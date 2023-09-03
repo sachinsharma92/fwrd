@@ -2171,7 +2171,6 @@ function contactValidator() {
                   });
             }
           }
-
           /* Call the function */
           mediaSize();
           /* Attach the function to the resize event listener */
@@ -2596,8 +2595,8 @@ function contactValidator() {
               ),
               u.to(s, 0.8, {
                 y: window.matchMedia("(min-width: 1900px)").matches
-                  ? "290%"
-                  : "240%",
+                  ? "260%"
+                  : "220%",
               });
           } else {
             s.length &&
