@@ -2178,6 +2178,7 @@ function contactValidator() {
                   });
             }
           }
+
           /* Call the function */
           mediaSize();
           /* Attach the function to the resize event listener */
@@ -4004,6 +4005,13 @@ function contactValidator() {
         r.toggleClass("v-light");
       });
   });
+
+  // Popup Modal
+  $(".open-popup-link").magnificPopup({
+    type: "inline",
+    midClick: true,
+    mainClass: "mfp-fade",
+  });
 })(jQuery);
 
 ("use strict");
@@ -4148,3 +4156,67 @@ var FindJob = (function () {
     }
   });
 })();
+
+let controller222 = new ScrollMagic.Controller();
+
+let t322 = new TimelineMax();
+t322
+  .to(".section_3_01", 4, {
+    y: -250,
+    ease: Power3.easeInOut,
+  })
+  .to(
+    ".section_3_02",
+    4,
+    {
+      y: -200,
+      ease: Power3.easeInOut,
+    },
+    "-=4"
+  )
+  .to(
+    ".section_3_03",
+    4,
+    {
+      y: -100,
+      ease: Power3.easeInOut,
+    },
+    "-=4"
+  )
+  .to(
+    ".section_3_04",
+    4,
+    {
+      y: 0,
+      ease: Power3.easeInOut,
+    },
+    "-=4"
+  )
+  .to(
+    ".section_3_05",
+    4,
+    {
+      y: 150,
+      ease: Power3.easeInOut,
+    },
+    "-=4"
+  )
+  .to(
+    ".section_3_06",
+    4,
+    {
+      y: 250,
+      ease: Power3.easeInOut,
+    },
+    "-=4"
+  );
+
+let scene3 = new ScrollMagic.Scene({
+  triggerElement: ".third-section",
+  duration: "100%",
+  triggerHook: 0,
+})
+  .setTween(t322)
+  .setPin(".third-section")
+  .addTo(controller222)
+  .addIndicators(); // add indicators (requires plugin)

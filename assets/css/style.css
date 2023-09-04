@@ -2596,7 +2596,7 @@ a:hover {
   top: 0;
   width: 100%;
   padding: 22px 50px;
-  z-index: 9000;
+  z-index: 999;
   pointer-events: none;
 }
 
