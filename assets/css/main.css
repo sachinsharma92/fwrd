@@ -532,11 +532,11 @@ header .header-page .subtitle-page {
 
 @media only screen and (min-width: 1700px) {
   #dsn-pigmentation-description.description {
-    left: 46%;
+    left: 40%;
   }
 
   .home-product.header-project .intro-project-details {
-    left: 46%;
+    left: 40%;
   }
 }
 
@@ -1960,11 +1960,7 @@ header .header-page .subtitle-page {
   width: 100%;
   height: 100vh;
   scale: 1.4;
-}
-
-#sevices {
-  z-index: -1;
-  margin-top: -100px;
+  transform: translateY(-77px);
 }
 
 /* View Project Popup End here */
@@ -1983,6 +1979,14 @@ header .header-page .subtitle-page {
     top: -20%;
     transform: rotateY(-3deg) rotateX(1deg) skewY(0deg) skewX(0deg)
       translateX(23%) translateY(40%) translateZ(-50px);
+  }
+  .fwrd-text-style .description h1 {
+    font-size: 4rem;
+  }
+
+  .texttt,
+  .text-style {
+    height: 80px;
   }
 }
 
@@ -2662,15 +2666,21 @@ header .header-page .subtitle-page {
   .view-project-popup .title-main {
     font-size: 3.2rem;
   }
-}
 
-@media (min-width: 1700px) {
-  .fwrd-text-style .description h1 {
-    font-size: 4rem;
+  #imagesequence img {
+    display: block;
+    max-width: 100vw;
+    margin: 0 auto;
+    scale: 1.6;
+    margin-top: 21vh;
   }
 
-  .texttt,
   .text-style {
-    height: 80px;
+    top: 35vh;
+    height: 30px;
+  }
+
+  .text-style .texttt {
+    font-size: 2.5rem;
   }
 }

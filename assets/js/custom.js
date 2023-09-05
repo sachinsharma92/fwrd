@@ -1582,82 +1582,78 @@ function contactValidator() {
             u = new TimelineLite();
           // imgTimeline = new TimelineLite();
           function mediaSize() {
-            if (window.matchMedia("(max-width: 767px)").matches) {
-              //  Hellow
-            } else {
-              u.to(imageSec, 0.5, {
-                curImg: images.length - 1,
-                roundProps: "curImg",
-                repeat: 0,
-                immediateRender: true,
-                ease: Quad.easeInOut,
-                onUpdate: function () {
-                  console.log("check img sec", imageSec.curImg);
-                  $("#myimg").attr("src", images[imageSec.curImg]);
-                  if (imageSec.curImg <= 2) {
-                    $(".text1").addClass("current");
-                    $(".text2").removeClass("current");
-                    $(".text3").removeClass("current");
-                    $(".text4").removeClass("current");
-                    $(".text5").removeClass("current");
-                    $(".text6").removeClass("current");
-                    $(".text7").removeClass("current");
-                  } else if (imageSec.curImg <= 4) {
-                    $(".text2").addClass("current");
-                    $(".text1").removeClass("current");
-                    $(".text3").removeClass("current");
-                    $(".text4").removeClass("current");
-                    $(".text5").removeClass("current");
-                    $(".text6").removeClass("current");
-                    $(".text7").removeClass("current");
-                  } else if (imageSec.curImg <= 6) {
-                    $(".text3").addClass("current");
-                    $(".text2").removeClass("current");
-                    $(".text1").removeClass("current");
-                    $(".text4").removeClass("current");
-                    $(".text5").removeClass("current");
-                    $(".text6").removeClass("current");
-                    $(".text7").removeClass("current");
-                  } else if (imageSec.curImg <= 8) {
-                    $(".text4").addClass("current");
-                    $(".text1").removeClass("current");
-                    $(".text2").removeClass("current");
-                    $(".text3").removeClass("current");
-                    $(".text5").removeClass("current");
-                    $(".text6").removeClass("current");
-                    $(".text7").removeClass("current");
-                  } else if (imageSec.curImg <= 10) {
-                    $(".text5").addClass("current");
-                    $(".text1").removeClass("current");
-                    $(".text2").removeClass("current");
-                    $(".text3").removeClass("current");
-                    $(".text4").removeClass("current");
-                    $(".text6").removeClass("current");
-                    $(".text7").removeClass("current");
-                  } else if (imageSec.curImg <= 12) {
-                    $(".text6").addClass("current");
-                    $(".text1").removeClass("current");
-                    $(".text2").removeClass("current");
-                    $(".text3").removeClass("current");
-                    $(".text4").removeClass("current");
-                    $(".text5").removeClass("current");
-                    $(".text7").removeClass("current");
-                  } else {
-                    $(".text7").addClass("current");
-                    $(".text1").removeClass("current");
-                    $(".text2").removeClass("current");
-                    $(".text3").removeClass("current");
-                    $(".text4").removeClass("current");
-                    $(".text5").removeClass("current");
-                    $(".text6").removeClass("current");
-                  }
-                },
-              });
+            u.to(imageSec, 0.5, {
+              curImg: images.length - 1,
+              roundProps: "curImg",
+              repeat: 0,
+              immediateRender: true,
+              ease: Quad.easeInOut,
+              onUpdate: function () {
+                console.log("check img sec", imageSec.curImg);
+                $("#myimg").attr("src", images[imageSec.curImg]);
+                if (imageSec.curImg <= 2) {
+                  $(".text1").addClass("current");
+                  $(".text2").removeClass("current");
+                  $(".text3").removeClass("current");
+                  $(".text4").removeClass("current");
+                  $(".text5").removeClass("current");
+                  $(".text6").removeClass("current");
+                  $(".text7").removeClass("current");
+                } else if (imageSec.curImg <= 4) {
+                  $(".text2").addClass("current");
+                  $(".text1").removeClass("current");
+                  $(".text3").removeClass("current");
+                  $(".text4").removeClass("current");
+                  $(".text5").removeClass("current");
+                  $(".text6").removeClass("current");
+                  $(".text7").removeClass("current");
+                } else if (imageSec.curImg <= 6) {
+                  $(".text3").addClass("current");
+                  $(".text2").removeClass("current");
+                  $(".text1").removeClass("current");
+                  $(".text4").removeClass("current");
+                  $(".text5").removeClass("current");
+                  $(".text6").removeClass("current");
+                  $(".text7").removeClass("current");
+                } else if (imageSec.curImg <= 8) {
+                  $(".text4").addClass("current");
+                  $(".text1").removeClass("current");
+                  $(".text2").removeClass("current");
+                  $(".text3").removeClass("current");
+                  $(".text5").removeClass("current");
+                  $(".text6").removeClass("current");
+                  $(".text7").removeClass("current");
+                } else if (imageSec.curImg <= 10) {
+                  $(".text5").addClass("current");
+                  $(".text1").removeClass("current");
+                  $(".text2").removeClass("current");
+                  $(".text3").removeClass("current");
+                  $(".text4").removeClass("current");
+                  $(".text6").removeClass("current");
+                  $(".text7").removeClass("current");
+                } else if (imageSec.curImg <= 12) {
+                  $(".text6").addClass("current");
+                  $(".text1").removeClass("current");
+                  $(".text2").removeClass("current");
+                  $(".text3").removeClass("current");
+                  $(".text4").removeClass("current");
+                  $(".text5").removeClass("current");
+                  $(".text7").removeClass("current");
+                } else {
+                  $(".text7").addClass("current");
+                  $(".text1").removeClass("current");
+                  $(".text2").removeClass("current");
+                  $(".text3").removeClass("current");
+                  $(".text4").removeClass("current");
+                  $(".text5").removeClass("current");
+                  $(".text6").removeClass("current");
+                }
+              },
+            });
 
-              u.to("#myimg", 2, {
-                ease: Quad.easeInOut,
-              });
-            }
+            u.to("#myimg", 2, {
+              ease: Quad.easeInOut,
+            });
           }
 
           /* Call the function */
@@ -1667,7 +1663,7 @@ function contactValidator() {
           let f = dsnGrid.tweenMaxParallax(d, t).addParrlax({
             id: i,
             triggerHook: 0,
-            duration: 2100,
+            duration: 3100,
             tween: u,
             _fixed: !0,
           });
@@ -3636,52 +3632,3 @@ var FindJob = (function () {
     }
   });
 })();
-
-// define images
-
-// let images = [
-//   "../assets/img/frames/1.svg",
-//   "../assets/img/frames/2.svg",
-//   "../assets/img/frames/3.svg",
-//   "../assets/img/frames/4.svg",
-//   "../assets/img/frames/5.svg",
-//   "../assets/img/frames/6.svg",
-//   "../assets/img/frames/7.svg",
-//   "../assets/img/frames/8.svg",
-//   "../assets/img/frames/9.svg",
-//   "../assets/img/frames/10.svg",
-//   "../assets/img/frames/11.svg",
-//   "../assets/img/frames/12.svg",
-//   "../assets/img/frames/13.svg",
-//   "../assets/img/frames/14.svg",
-// ];
-
-// let obj = { curImg: 0 };
-// let tweenImgSec = new TimelineMax();
-// tweenImgSec.add([
-//   TweenMax.to(obj, 0.5, {
-//     curImg: images.length - 1,
-//     roundProps: "curImg",
-//     repeat: 0,
-//     immediateRender: true,
-//     ease: Quad.easeInOut,
-//     onUpdate: function () {
-//       $("#myimg").attr("src", images[obj.curImg]);
-//     },
-//   }),
-//   TweenMax.to("#myimg", 4, {
-//     ease: Quad.easeInOut,
-//   }),
-// ]);
-
-// // init controller
-// let controllerImgSec = new ScrollMagic.Controller();
-// let scene = new ScrollMagic.Scene({
-//   duration: "100%",
-//   triggerHook: 0,
-//   tweenChanges: false,
-// })
-//   .setPin("#imagesequence")
-//   .setTween(tweenImgSec)
-//   .addIndicators()
-//   .addTo(controllerImgSec);
