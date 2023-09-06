@@ -2649,7 +2649,7 @@ a:hover {
 
 .site-header .menu-icon {
   position: relative;
-  top: -5px;
+  top: 5px;
   cursor: pointer;
   pointer-events: all;
 }

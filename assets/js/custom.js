@@ -1596,12 +1596,12 @@ function contactValidator() {
             u = new TimelineLite();
           // imgTimeline = new TimelineLite();
           function mediaSize() {
-            u.to(imageSec, 2, {
+            u.to(imageSec, 1, {
               curImg: images.length - 1,
               roundProps: "curImg",
               repeat: 0,
               immediateRender: true,
-              ease: Back.easeOut.config(1.7),
+              ease: Back.easeOut.config(1),
               onUpdate: function () {
                 console.log("check img sec", imageSec.curImg);
                 $("#myimg").attr("src", images[imageSec.curImg]);
@@ -1636,7 +1636,7 @@ function contactValidator() {
           let f = dsnGrid.tweenMaxParallax(d, t).addParrlax({
             id: i,
             triggerHook: 0,
-            duration: "100%",
+            duration: 2100,
             tween: u,
             _fixed: !0,
           });
