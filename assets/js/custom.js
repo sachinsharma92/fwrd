@@ -1582,7 +1582,7 @@ function contactValidator() {
             u = new TimelineLite();
           // imgTimeline = new TimelineLite();
           function mediaSize() {
-            u.to(imageSec, 1, {
+            u.to(imageSec, 2, {
               curImg: images.length - 1,
               roundProps: "curImg",
               repeat: 0,
@@ -1651,8 +1651,8 @@ function contactValidator() {
               },
             });
 
-            u.to("#myimg", 4, {
-              ease: Quad.easeInOut,
+            u.to("#myimg", 3, {
+              ease: Back.easeOut.config(1.7),
             });
           }
 
