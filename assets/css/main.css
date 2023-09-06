@@ -491,7 +491,7 @@ header .header-page .subtitle-page {
 
 #dsn-pigmentation-description.description {
   position: absolute;
-  margin-top: -22%;
+  margin-top: -27%;
   max-width: 680px;
   width: 100%;
   left: 44%;
@@ -499,7 +499,7 @@ header .header-page .subtitle-page {
 }
 
 #dsn-pigmentation-desc-items.intro-project-details {
-  margin-top: 6%;
+  margin-top: 1%;
 }
 
 .home-product.header-project .intro-project {
@@ -537,6 +537,14 @@ header .header-page .subtitle-page {
 
   .home-product.header-project .intro-project-details {
     left: 40%;
+  }
+
+  #dsn-pigmentation-desc-items.intro-project-details {
+    margin-top: 5%;
+  }
+
+  #dsn-pigmentation-description.description {
+    margin-top: -22%;
   }
 }
 
