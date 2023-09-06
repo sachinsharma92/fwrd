@@ -1582,12 +1582,12 @@ function contactValidator() {
             u = new TimelineLite();
           // imgTimeline = new TimelineLite();
           function mediaSize() {
-            u.to(imageSec, 0.5, {
+            u.to(imageSec, 1, {
               curImg: images.length - 1,
               roundProps: "curImg",
               repeat: 0,
               immediateRender: true,
-              ease: Quad.easeInOut,
+              ease: Back.easeOut.config(1.7),
               onUpdate: function () {
                 console.log("check img sec", imageSec.curImg);
                 $("#myimg").attr("src", images[imageSec.curImg]);
@@ -1651,7 +1651,7 @@ function contactValidator() {
               },
             });
 
-            u.to("#myimg", 2, {
+            u.to("#myimg", 4, {
               ease: Quad.easeInOut,
             });
           }
@@ -1663,7 +1663,7 @@ function contactValidator() {
           let f = dsnGrid.tweenMaxParallax(d, t).addParrlax({
             id: i,
             triggerHook: 0,
-            duration: 3100,
+            duration: "100%",
             tween: u,
             _fixed: !0,
           });
