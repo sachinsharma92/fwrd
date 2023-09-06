@@ -1559,6 +1559,20 @@ function contactValidator() {
             "../assets/img/frames/12.svg",
             "../assets/img/frames/13.svg",
             "../assets/img/frames/14.svg",
+            "../assets/img/frames/15.svg",
+            "../assets/img/frames/16.svg",
+            "../assets/img/frames/17.svg",
+            "../assets/img/frames/18.svg",
+            "../assets/img/frames/19.svg",
+            "../assets/img/frames/20.svg",
+            "../assets/img/frames/21.svg",
+            "../assets/img/frames/22.svg",
+            "../assets/img/frames/23.svg",
+            "../assets/img/frames/24.svg",
+            "../assets/img/frames/25.svg",
+            "../assets/img/frames/26.svg",
+            "../assets/img/frames/27.svg",
+            "../assets/img/frames/28.svg",
           ];
           let imageSec = { curImg: 0 };
           let i = '[data-dsn-header="acne"]';
@@ -1592,17 +1606,17 @@ function contactValidator() {
                 console.log("check img sec", imageSec.curImg);
                 $("#myimg").attr("src", images[imageSec.curImg]);
                 $(".texttt").removeClass("current");
-                if (imageSec.curImg <= 2) {
+                if (imageSec.curImg <= 4) {
                   $(".text1").addClass("current");
-                } else if (imageSec.curImg <= 4) {
-                  $(".text2").addClass("current");
-                } else if (imageSec.curImg <= 6) {
-                  $(".text3").addClass("current");
                 } else if (imageSec.curImg <= 8) {
-                  $(".text4").addClass("current");
-                } else if (imageSec.curImg <= 10) {
-                  $(".text5").addClass("current");
+                  $(".text2").addClass("current");
                 } else if (imageSec.curImg <= 12) {
+                  $(".text3").addClass("current");
+                } else if (imageSec.curImg <= 16) {
+                  $(".text4").addClass("current");
+                } else if (imageSec.curImg <= 20) {
+                  $(".text5").addClass("current");
+                } else if (imageSec.curImg <= 24) {
                   $(".text6").addClass("current");
                 } else {
                   $(".text7").addClass("current");
@@ -1610,9 +1624,9 @@ function contactValidator() {
               },
             });
 
-            u.to("#myimg", 3, {
-              ease: Back.easeOut.config(1.7),
-            });
+            // u.to("#myimg", 3, {
+            //   ease: Back.easeOut.config(1.7),
+            // });
           }
 
           /* Call the function */
