@@ -2656,8 +2656,8 @@ a:hover {
 
 .site-header .menu-icon .icon-m .menu-icon-line {
   background-color: #fe5e00;
-  width: 23px !important;
-  height: 2px;
+  width: 30px !important;
+  height: 3px;
   -webkit-transition: -webkit-transform 0.2s ease-Out;
   transition: -webkit-transform 0.2s ease-Out;
   -o-transition: transform 0.2s ease-Out;
@@ -2879,6 +2879,11 @@ a:hover {
 @media only screen and (max-width: 767px) {
   .site-header .container-content {
     display: none;
+  }
+
+  .site-header .menu-icon .icon-m .menu-icon-line {
+    width: 25px !important;
+    height: 2.5px;
   }
 }
 
@@ -11236,4 +11241,7 @@ label {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+}
+
+@media (max-width: 767px) {
 }
