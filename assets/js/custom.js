@@ -1591,62 +1591,21 @@ function contactValidator() {
               onUpdate: function () {
                 console.log("check img sec", imageSec.curImg);
                 $("#myimg").attr("src", images[imageSec.curImg]);
+                $(".texttt").removeClass("current");
                 if (imageSec.curImg <= 2) {
                   $(".text1").addClass("current");
-                  $(".text2").removeClass("current");
-                  $(".text3").removeClass("current");
-                  $(".text4").removeClass("current");
-                  $(".text5").removeClass("current");
-                  $(".text6").removeClass("current");
-                  $(".text7").removeClass("current");
                 } else if (imageSec.curImg <= 4) {
                   $(".text2").addClass("current");
-                  $(".text1").removeClass("current");
-                  $(".text3").removeClass("current");
-                  $(".text4").removeClass("current");
-                  $(".text5").removeClass("current");
-                  $(".text6").removeClass("current");
-                  $(".text7").removeClass("current");
                 } else if (imageSec.curImg <= 6) {
                   $(".text3").addClass("current");
-                  $(".text2").removeClass("current");
-                  $(".text1").removeClass("current");
-                  $(".text4").removeClass("current");
-                  $(".text5").removeClass("current");
-                  $(".text6").removeClass("current");
-                  $(".text7").removeClass("current");
                 } else if (imageSec.curImg <= 8) {
                   $(".text4").addClass("current");
-                  $(".text1").removeClass("current");
-                  $(".text2").removeClass("current");
-                  $(".text3").removeClass("current");
-                  $(".text5").removeClass("current");
-                  $(".text6").removeClass("current");
-                  $(".text7").removeClass("current");
                 } else if (imageSec.curImg <= 10) {
                   $(".text5").addClass("current");
-                  $(".text1").removeClass("current");
-                  $(".text2").removeClass("current");
-                  $(".text3").removeClass("current");
-                  $(".text4").removeClass("current");
-                  $(".text6").removeClass("current");
-                  $(".text7").removeClass("current");
                 } else if (imageSec.curImg <= 12) {
                   $(".text6").addClass("current");
-                  $(".text1").removeClass("current");
-                  $(".text2").removeClass("current");
-                  $(".text3").removeClass("current");
-                  $(".text4").removeClass("current");
-                  $(".text5").removeClass("current");
-                  $(".text7").removeClass("current");
                 } else {
                   $(".text7").addClass("current");
-                  $(".text1").removeClass("current");
-                  $(".text2").removeClass("current");
-                  $(".text3").removeClass("current");
-                  $(".text4").removeClass("current");
-                  $(".text5").removeClass("current");
-                  $(".text6").removeClass("current");
                 }
               },
             });
