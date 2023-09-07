@@ -1575,6 +1575,7 @@ function contactValidator() {
             "../assets/img/frames/28.svg",
           ];
           let imageSec = { curImg: 0 };
+
           let i = '[data-dsn-header="acne"]';
           if (e(i).length <= 0 || e(i).hasClass("dsn-end-animate"))
             return (i = null), !1;
@@ -3606,6 +3607,16 @@ var FindJob = (function () {
   });
 })();
 
-$(".extend-container a").click(function () {
-  $("section").removeAttr("data-dsn-header");
-});
+// $(document).ready(function () {
+//   $("#ourWorkScroll").on("click", function (e) {
+//     console.log(e.target);
+//     console.log($(this));
+//     alert("The paragraph was clicked.");
+//     $("html, body").animate(
+//       {
+//         scrollTop: $(window).scrollTop() + 400,
+//       },
+//       "fast"
+//     );
+//   });
+// });

@@ -98,27 +98,6 @@ h2.display {
   background-color: var(--bs-primary);
   content: "";
 }
-
-@media (max-width: 767px) {
-  .about-sec-style
-    .dsn-word-wrapper:last-child
-    .dsn-chars-wrapper:last-child::before {
-    display: none;
-  }
-
-  .header_about h3.sub-title {
-    font-size: 3rem;
-  }
-
-  .header_about {
-    padding-bottom: 150px;
-  }
-
-  #dsn-about-title .metas {
-    left: 5% !important;
-  }
-}
-
 h2.display-1 {
   font-size: 6.25rem;
 }
@@ -555,12 +534,6 @@ header .header-page .subtitle-page {
 /* ! Work slick slider */
 .our-work .work-item {
   height: 80vh;
-}
-
-@media only screen and (max-width: 767px) {
-  .our-work .work-item {
-    height: 100vh;
-  }
 }
 
 .our-work .slick-list .slick-slide {
@@ -1357,33 +1330,6 @@ header .header-page .subtitle-page {
   margin-bottom: 150px;
 }
 
-@media only screen and (max-width: 767px) {
-  .work_2.our-work .work-item {
-    flex-direction: column;
-    padding: 0;
-    background: black;
-  }
-
-  .work_2.our-work .img-next-box {
-    min-width: 300px;
-    max-width: 100%;
-    height: 538px;
-    box-shadow: none;
-  }
-
-  .header-project.header_about .sub-about-title {
-    left: 6%;
-    bottom: -35%;
-  }
-  .work_2.our-work .img-next-box::before {
-    display: none;
-  }
-  .work_2.our-work {
-    background: black;
-    margin-bottom: 0;
-  }
-}
-
 @media only screen and (min-width: 1600px) {
   .work_2.our-work .item-info {
     max-width: 50%;
@@ -1428,18 +1374,6 @@ header .header-page .subtitle-page {
 
 .header_our.header-project .description {
   margin-top: -25px;
-}
-
-@media only screen and (max-width: 767px) {
-  .header_our .title {
-    line-height: 5rem !important;
-  }
-  .header_our.header-project .description {
-    margin-top: 35px;
-  }
-  .header_our {
-    max-height: 500px;
-  }
 }
 
 .our.title .dsn-chars-wrapper {
@@ -1540,12 +1474,6 @@ header .header-page .subtitle-page {
   position: relative;
   display: flex;
   gap: 0 100px;
-}
-
-@media only screen and (max-width: 767px) {
-  .header-project .info-group {
-    flex-direction: column;
-  }
 }
 
 .header-project .desc-personal {
@@ -1977,6 +1905,33 @@ header .header-page .subtitle-page {
   max-width: 48%;
 }
 
+.next-project {
+  padding: 70px 0;
+}
+
+/* input-file-style */
+.input-file-style {
+  display: flex;
+  flex-direction: column;
+}
+.input-file-style label {
+  display: flex;
+  opacity: 1;
+}
+.input-file-style .label-text {
+  color: white;
+  font-size: 15px;
+  opacity: 0.6;
+  position: relative;
+  top: 20px;
+}
+.input-file-style .file-path {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid white;
+  margin-right: 20px;
+}
+
 /* * Resposive media query */
 @media (max-width: 1900px) {
   .box {
@@ -2221,10 +2176,6 @@ header .header-page .subtitle-page {
     line-height: 1;
   }
 
-  #dsn-about-title .metas {
-    top: 54%;
-  }
-
   .header-project.header_about .info-group {
     position: absolute;
     left: 10%;
@@ -2260,7 +2211,7 @@ header .header-page .subtitle-page {
     margin: auto;
     max-width: 680px;
     height: 100%;
-    padding-top: 180px;
+    padding-top: 80px;
   }
 
   .header-project.header_belief {
@@ -2272,7 +2223,7 @@ header .header-page .subtitle-page {
   }
 
   .header-project.header_belief .info-group .description {
-    margin-top: 240px;
+    margin-top: 140px;
   }
 
   .our.title .dsn-word-wrapper:last-child .dsn-chars-wrapper:last-child:after {
@@ -2282,11 +2233,6 @@ header .header-page .subtitle-page {
   .work_2.our-work .work-item .item-border {
     height: 32vh;
     top: 10rem;
-  }
-
-  .work_2.our-work .img-next-box {
-    width: 90%;
-    height: 35vh;
   }
 
   .work_2.our-work .item-info {
@@ -2431,34 +2377,7 @@ header .header-page .subtitle-page {
   }
 }
 
-.next-project {
-  padding: 70px 0;
-}
-
-/* input-file-style */
-.input-file-style {
-  display: flex;
-  flex-direction: column;
-}
-.input-file-style label {
-  display: flex;
-  opacity: 1;
-}
-.input-file-style .label-text {
-  color: white;
-  font-size: 15px;
-  opacity: 0.6;
-  position: relative;
-  top: 20px;
-}
-.input-file-style .file-path {
-  display: block;
-  width: 100%;
-  border-bottom: 1px solid white;
-  margin-right: 20px;
-}
-
-@media (max-width: 520px) {
+@media (max-width: 767px) {
   :root {
     font-size: 8px;
   }
@@ -2477,7 +2396,7 @@ header .header-page .subtitle-page {
 
   p.lead,
   .lead p {
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 1.4;
   }
 
@@ -2670,9 +2589,6 @@ header .header-page .subtitle-page {
     font-size: 1.25rem;
     letter-spacing: 2px;
   }
-}
-
-@media (max-width: 767px) {
   .hide-mobile {
     display: none;
   }
@@ -2743,5 +2659,84 @@ header .header-page .subtitle-page {
 
   .home-product.header-project .intro-project {
     margin-top: 80px;
+  }
+
+  .about-sec-style
+    .dsn-word-wrapper:last-child
+    .dsn-chars-wrapper:last-child::before {
+    display: none;
+  }
+
+  .header_about h3.sub-title {
+    font-size: 3rem;
+  }
+
+  .header_about {
+    padding-bottom: 150px;
+  }
+
+  #dsn-about-title .metas {
+    left: 5% !important;
+  }
+  .work_2.our-work .work-item {
+    flex-direction: column;
+    padding: 0;
+  }
+  .our-work .work-item .item-info p {
+    color: black !important;
+  }
+
+  .work_2.our-work .img-next-box {
+    aspect-ratio: 1/1;
+    box-shadow: none;
+    position: relative;
+    overflow: hidden;
+    min-width: 80%;
+    height: auto;
+    min-height: 300px;
+    margin-bottom: 20px;
+  }
+
+  .work_2.our-work .img-next-box img {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 30px;
+    right: 0;
+    top: 0px;
+    object-fit: cover;
+  }
+
+  .header-project.header_about .sub-about-title {
+    left: 6%;
+    bottom: -35%;
+  }
+  .work_2.our-work {
+    margin-bottom: 0;
+  }
+
+  .our-work .work-item {
+    height: auto;
+  }
+
+  .header_our .title {
+    line-height: 5rem !important;
+  }
+  .header_our.header-project .description {
+    margin-top: 35px;
+  }
+  .header_our {
+    max-height: 500px;
+  }
+  .header-project .info-group {
+    flex-direction: column;
+  }
+
+  .belief.title .dsn-word-wrapper:first-child {
+    margin-top: -30px;
+  }
+
+  .footer-1 .footer-links .footer-block .footer-logo {
+    width: 250px;
   }
 }

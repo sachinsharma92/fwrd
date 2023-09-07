@@ -5460,11 +5460,6 @@ a:hover {
   .work-masonry .filterings-t .filtering-wrap {
     width: 100%;
   }
-
-  .our-work .work-item .item-info span {
-    opacity: 1;
-    color: white;
-  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -11244,7 +11239,4 @@ label {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-}
-
-@media (max-width: 767px) {
 }
