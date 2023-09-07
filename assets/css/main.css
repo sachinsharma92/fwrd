@@ -1267,7 +1267,7 @@ header .header-page .subtitle-page {
   height: 200px;
 }
 
-#dsn-hero-title .metas {
+[data-dsn-header="project"] .metas {
   transform: rotateZ(-90deg);
   position: relative;
   width: 100%;
