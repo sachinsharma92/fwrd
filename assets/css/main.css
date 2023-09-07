@@ -2397,7 +2397,7 @@ header .header-page .subtitle-page {
   .header-project.header_about .info-group {
     position: absolute;
     left: auto;
-    bottom: -150px;
+    bottom: -210px;
     top: auto;
     max-width: 90%;
   }
@@ -2437,7 +2437,7 @@ header .header-page .subtitle-page {
   }
 
   p {
-    font-size: 1.45rem;
+    font-size: 2rem;
   }
 
   h4 {
@@ -2712,5 +2712,9 @@ header .header-page .subtitle-page {
 
   .sevices-up-title {
     max-width: 92%;
+  }
+
+  .home-product.header-project .intro-project {
+    margin-top: 80px;
   }
 }
