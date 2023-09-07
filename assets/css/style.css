@@ -11092,6 +11092,10 @@ label {
     text-align: center;
     margin-top: 20px;
   }
+
+  .form-box .form-group .help-block {
+    bottom: -5px;
+  }
 }
 
 .footer .column-right h5 {

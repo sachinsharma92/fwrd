@@ -1000,8 +1000,8 @@ header .header-page .subtitle-page {
 }
 
 .L_shap-bottom {
-  transform: rotateY(21.5deg) rotateX(0deg) rotateZ(-6deg) skewY(6deg)
-    skewX(-6deg) translateX(44%) translateY(-5%) translateZ(-85px);
+  transform: rotateY(21.4deg) rotateX(0deg) rotateZ(-6deg) skewY(6deg)
+    skewX(-6deg) translateX(42.1%) translateY(-11%) translateZ(-85px);
   scale: 2.01;
 }
 
@@ -1695,8 +1695,6 @@ header .header-page .subtitle-page {
   position: relative;
   overflow: hidden;
   width: 100%;
-  position: absolute;
-  top: 58%;
 }
 
 .text-style .texttt {
@@ -1713,12 +1711,6 @@ header .header-page .subtitle-page {
   white-space: nowrap;
   left: 0;
   width: 100%;
-  transition: all 0.5s ease-in-out;
-  transform: translateY(100px);
-}
-
-.current {
-  transform: translateY(0px);
 }
 
 .texttt span {
@@ -2631,7 +2623,6 @@ header .header-page .subtitle-page {
   }
 
   .text-style {
-    top: 32vh;
     height: 30px;
   }
 
@@ -2655,10 +2646,6 @@ header .header-page .subtitle-page {
 
   .sevices-up-title {
     max-width: 92%;
-  }
-
-  .home-product.header-project .intro-project {
-    margin-top: 80px;
   }
 
   .about-sec-style
@@ -2712,7 +2699,7 @@ header .header-page .subtitle-page {
     bottom: -35%;
   }
   .work_2.our-work {
-    margin-bottom: 0;
+    margin-bottom: 80px;
   }
 
   .our-work .work-item {
@@ -2738,5 +2725,19 @@ header .header-page .subtitle-page {
 
   .footer-1 .footer-links .footer-block .footer-logo {
     width: 250px;
+  }
+
+  .header-project [data-overlay]:before {
+    height: 85%;
+  }
+
+  .custom-input-file + label {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .upload-file .file-name {
+    height: 40px;
+    font-size: 14px;
   }
 }
