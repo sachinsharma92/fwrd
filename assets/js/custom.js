@@ -3606,6 +3606,6 @@ var FindJob = (function () {
   });
 })();
 
-// $(".extend-container a").click(function () {
-//   $("section").removeAttr("data-dsn-header=*");
-// });
+$(".extend-container a").click(function () {
+  $("section").removeAttr("data-dsn-header");
+});

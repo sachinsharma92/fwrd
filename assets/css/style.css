@@ -2473,6 +2473,10 @@ input[type="search"]::-webkit-search-decoration {
   background-color: #000;
 }
 
+.btn-form input {
+  color: white;
+}
+
 .link-custom {
   border-radius: 30px;
   height: 48px;
@@ -3928,7 +3932,7 @@ a:hover {
 }
 
 .next-project {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .next-project .img-next-box {
@@ -10433,8 +10437,8 @@ header .header-master.header-half .social-network-box {
   font-weight: 600;
   margin-bottom: 15px;
   position: absolute;
-  bottom: -7px;
-  font-size: 12px;
+  bottom: -20px;
+  font-size: 13px;
 }
 
 .form-box .form-group li {
@@ -10448,7 +10452,6 @@ header .header-master.header-half .social-network-box {
 
 .entry input,
 .entry textarea {
-  font-family: "Roboto";
   font-weight: bold;
   font-size: 16px;
   width: 100%;

@@ -2014,7 +2014,7 @@ header .header-page .subtitle-page {
   }
 
   .next-project {
-    height: 100vh;
+    min-height: 100vh;
   }
 }
 
@@ -2295,7 +2295,7 @@ header .header-page .subtitle-page {
   }
 
   .next-project {
-    height: auto;
+    min-height: auto;
   }
 
   #dsn-footer-title {
@@ -2429,6 +2429,33 @@ header .header-page .subtitle-page {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+.next-project {
+  padding: 70px 0;
+}
+
+/* input-file-style */
+.input-file-style {
+  display: flex;
+  flex-direction: column;
+}
+.input-file-style label {
+  display: flex;
+  opacity: 1;
+}
+.input-file-style .label-text {
+  color: white;
+  font-size: 15px;
+  opacity: 0.6;
+  position: relative;
+  top: 20px;
+}
+.input-file-style .file-path {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid white;
+  margin-right: 20px;
 }
 
 @media (max-width: 520px) {
